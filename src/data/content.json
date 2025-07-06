@@ -1,0 +1,202 @@
+{
+  "navigation": {
+    "en": {
+      "home": "Home",
+      "about": "About Us",
+      "mission": "Mission",
+      "expertise": "Areas of Expertise",
+      "services": "Services",
+      "team": "Team",
+      "partners": "Partners",
+      "contact": "Contact"
+    },
+    "fr": {
+      "home": "Accueil",
+      "about": "À Propos",
+      "mission": "Mission",
+      "expertise": "Domaines d'Expertise",
+      "services": "Services",
+      "team": "Équipe",
+      "partners": "Partenaires",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "en": {
+      "headline": "Driving Sustainable Change in East Africa",
+      "subheadline": "Expert consulting services in peacebuilding, communications, access to justice, and sustainable development across Rwanda and Burundi.",
+      "cta": "Explore Our Services",
+      "stats": {
+        "projects": "50+ Projects Completed",
+        "countries": "2 Countries Served",
+        "experience": "10+ Years Experience",
+        "clients": "Satisfied Clients"
+      }
+    },
+    "fr": {
+      "headline": "Conduire un Changement Durable en Afrique de l'Est",
+      "subheadline": "Services de conseil experts en consolidation de la paix, communications, accès à la justice et développement durable au Rwanda et au Burundi.",
+      "cta": "Découvrir Nos Services",
+      "stats": {
+        "projects": "50+ Projets Réalisés",
+        "countries": "2 Pays Servis",
+        "experience": "10+ Années d'Expérience",
+        "clients": "Clients Satisfaits"
+      }
+    }
+  },
+  "about": {
+    "en": {
+      "title": "About Tikkun Olam Consulting Group",
+      "content": "Tikkun Olam Consulting Group is an East African consulting firm based in Rwanda and Burundi with expertise in peacebuilding, communications, access to justice and the rule of law, international trade, renewable energy and health economy. We are committed to driving sustainable change and positive impact across East Africa through innovative consulting solutions and strategic partnerships."
+    },
+    "fr": {
+      "title": "À Propos de Tikkun Olam Consulting Group",
+      "content": "Tikkun Olam Consulting Group est une société de conseil est-africaine basée au Rwanda et au Burundi avec une expertise en consolidation de la paix, communications, accès à la justice et état de droit, commerce international, énergies renouvelables et économie de la santé. Nous nous engageons à conduire un changement durable et un impact positif à travers l'Afrique de l'Est grâce à des solutions de conseil innovantes et des partenariats stratégiques."
+    }
+  },
+  "mission": {
+    "en": {
+      "title": "Our Mission",
+      "statement": "To contribute to a positive impact in the development sector in Africa through innovative consulting services, strategic partnerships, and sustainable solutions that drive meaningful change.",
+      "values": {
+        "title": "Our Values & Goals",
+        "items": [
+          "Mutual learning, adaptation and creativity/innovation",
+          "Sustainable development and environmental responsibility",
+          "Transparency and accountability in all operations",
+          "Cultural sensitivity and local community engagement",
+          "Excellence in service delivery and client satisfaction"
+        ]
+      }
+    },
+    "fr": {
+      "title": "Notre Mission",
+      "statement": "Contribuer à un impact positif dans le secteur du développement en Afrique grâce à des services de conseil innovants, des partenariats stratégiques et des solutions durables qui favorisent un changement significatif.",
+      "values": {
+        "title": "Nos Valeurs & Objectifs",
+        "items": [
+          "Apprentissage mutuel, adaptation et créativité/innovation",
+          "Développement durable et responsabilité environnementale",
+          "Transparence et responsabilité dans toutes les opérations",
+          "Sensibilité culturelle et engagement communautaire local",
+          "Excellence dans la prestation de services et satisfaction client"
+        ]
+      }
+    }
+  },
+  "services": {
+    "en": [
+      {
+        "title": "Technical Assistance",
+        "description": "We strengthen the capabilities of organizations and individuals. This includes resource mobilization, partnership development, tailored training, and strategic tool creation. Our goal is to improve your effectiveness and sustainability through planned change."
+      },
+      {
+        "title": "Research and Studies",
+        "description": "We analyze the social, economic, political, and cultural contexts of development challenges. We measure program effectiveness using quantitative and qualitative data. Our studies inform your decisions and policy development."
+      },
+      {
+        "title": "Evaluation",
+        "description": "We systematically assess the design, implementation, and outcomes of your projects.Our objective is to determine their effectiveness and efficiency. We provide clear insights for improvement and decision making based on various methodologies."
+      },
+      {
+        "title": "Project/Program Development & Management",
+        "description": "We manage all your initiatives: planning, execution, and monitoring. For projects, we ensure objectives are met within deadlines and budgets. For programs, we optimize resources to maximize long term benefits."
+      },
+      {
+        "title": "Communication Strategies & Knowledge Management",
+        "description": "We guide companies in their communication choices to satisfy all stakeholders. We cover visual and textual creation (graphics, motion design, video, photography). Our specialty: promoting your brand and supporting your awareness and advocacy campaigns."
+      }
+    ],
+    "fr": [
+      {
+        "title": "Assistance Technique",
+        "description": "Nous renforçons les capacités des organisations et des individus. Cela inclut la mobilisation de ressources, formations sur mesure et outils stratégiques. Notre but est d'améliorer votre efficacité et durabilité par un changement planifié."
+      },
+      {
+        "title": "Recherche et Études",
+        "description": "Nous analysons les contextes socio-économiques et culturels des enjeux de développement. Nous mesurons l'efficacité des programmes via des données quantitatives et qualitatives. Nos études éclairent vos décisions et l'élaboration des politiques."
+      },
+      {
+        "title": "Évaluation",
+        "description": "Nous évaluons systématiquement la conception, mise en œuvre et résultats de vos projets. Notre objectif est de déterminer leur efficacité et leur efficience. Nous fournissons des insights pour l'amélioration et la prise de décision, basés sur diverses méthodologies."
+      },
+      {
+        "title": "Développement et Gestion de Projets/Programmes",
+        "description": "Nous gérons l'ensemble de vos initiatives : planification, exécution et suivi. Pour les projets, nous garantissons l'atteinte des objectifs dans les délais et budgets. Pour les programmes, nous optimisons les ressources pour maximiser les bénéfices à long terme."
+      },
+      {
+        "title": "Stratégies de Communication et Gestion des Connaissances",
+        "description": "Nous guidons les entreprises dans leurs choix de communication pour satisfaire toutes les parties prenantes. Nous couvrons la création visuelle et textuelle (graphisme, motion design, vidéo, photo). Notre spécialité : promouvoir votre marque et soutenir vos campagnes de sensibilisation et plaidoyer."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Kid Fleury Ineza",
+      "position": {
+        "en": "Director of Operations",
+        "fr": "Directeur des Opérations"
+      },
+      "bio": {
+        "en": "Experienced operations leader with extensive background in project management and organizational development.",
+        "fr": "Leader expérimenté des opérations avec une vaste expérience en gestion de projet et développement organisationnel."
+      },
+      "linkedin": ""
+    },
+    {
+      "name": "Lyse Nathalie Menyimana",
+      "position": {
+        "en": "Director of Programs",
+        "fr": "Directrice des Programmes"
+      },
+      "bio": {
+        "en": "Strategic program director specializing in development initiatives and stakeholder engagement across East Africa.",
+        "fr": "Directrice stratégique de programmes spécialisée dans les initiatives de développement et l'engagement des parties prenantes en Afrique de l'Est."
+      },
+      "linkedin": ""
+    },
+    {
+      "name": "Milka Carelle Iyamuremye",
+      "position": {
+        "en": "Admin Assistant",
+        "fr": "Assistante Administrative"
+      },
+      "bio": {
+        "en": "Dedicated administrative professional ensuring smooth operations and efficient project coordination.",
+        "fr": "Professionnelle administrative dévouée assurant des opérations fluides et une coordination efficace des projets."
+      },
+      "linkedin": ""
+    }
+  ],
+  "contact": {
+    "en": {
+      "title": "Get in Touch",
+      "subtitle": "Ready to drive positive change together? Contact us today.",
+      "address": "Quartier Industrielle Avenue Ruvyironza Numero 687",
+      "email": "tikunolambets@gmail.com",
+      "whatsapp": "+23057865390",
+      "form": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "subject": "Subject",
+        "message": "Message",
+        "submit": "Send Message"
+      }
+    },
+    "fr": {
+      "title": "Contactez-Nous",
+      "subtitle": "Prêt à conduire un changement positif ensemble? Contactez-nous aujourd'hui.",
+      "address": "Quartier Industrielle Avenue Ruvyironza Numero 687",
+      "email": "tikunolambets@gmail.com",
+      "whatsapp": "+23057865390",
+      "form": {
+        "name": "Nom Complet",
+        "email": "Adresse Email",
+        "subject": "Sujet",
+        "message": "Message",
+        "submit": "Envoyer le Message"
+      }
+    }
+  }
+}
