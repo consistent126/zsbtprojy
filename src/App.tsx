@@ -6,6 +6,7 @@ import { About } from './pages/About';
 import { Mission } from './pages/Mission';
 import { AreasOfExpertise } from './pages/AreasOfExpertise';
 import { Services } from './pages/Services';
+import { Projects } from './pages/Projects';
 import { Team } from './pages/Team';
 import { Partners } from './pages/Partners';
 import { Contact } from './pages/Contact';
@@ -21,6 +22,7 @@ function App() {
             <Route path="/mission" element={<Mission />} />
             <Route path="/expertise" element={<AreasOfExpertise />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/team" element={<Team />} />
             <Route path="/partners" element={<Partners />} />
             <Route path="/contact" element={<Contact />} />

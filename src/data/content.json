@@ -3,9 +3,11 @@
     "en": {
       "home": "Home",
       "about": "About Us",
+      "achievements": "Our Achievements",
       "mission": "Mission",
       "expertise": "Areas of Expertise",
       "services": "Services",
+      "projects": "Projects",
       "team": "Team",
       "partners": "Partners",
       "contact": "Contact"
@@ -13,9 +15,11 @@
     "fr": {
       "home": "Accueil",
       "about": "À Propos",
+      "achievements": "Nos Réalisations",
       "mission": "Mission",
       "expertise": "Domaines d'Expertise",
       "services": "Services",
+      "projects": "Projets",
       "team": "Équipe",
       "partners": "Partenaires",
       "contact": "Contact"
@@ -23,8 +27,8 @@
   },
   "home": {
     "en": {
-      "headline": "Driving Sustainable Change in East Africa",
-      "subheadline": "Expert consulting services in peacebuilding, communications, access to justice, and sustainable development across Rwanda and Burundi.",
+      "headline": "Tikkun Olam Consulting group",
+      "subheadline": "Expert consulting services in Communication, Health economics , Peacebuilding , Access to justice and rule of law, Renewable energy, and International Trade.",
       "cta": "Explore Our Services",
       "stats": {
         "projects": "50+ Projects Completed",
@@ -34,8 +38,8 @@
       }
     },
     "fr": {
-      "headline": "Conduire un Changement Durable en Afrique de l'Est",
-      "subheadline": "Services de conseil experts en consolidation de la paix, communications, accès à la justice et développement durable au Rwanda et au Burundi.",
+      "headline": "Tikkun Olam Consulting group",
+      "subheadline": "Services de conseil experts en Communication, Économie de la santé, Consolidation de la paix, Accès à la justice et état de droit, Énergies renouvelables et Commerce international.",
       "cta": "Découvrir Nos Services",
       "stats": {
         "projects": "50+ Projets Réalisés",
@@ -85,6 +89,70 @@
       }
     }
   },
+  "projects": {
+    "en": {
+      "title": "Our Projects",
+      "subtitle": "Discover the impactful projects we've delivered across East Africa",
+      "content": "Our portfolio showcases successful implementations across various sectors including peacebuilding, communications, access to justice, renewable energy, health economics, and international trade. Each project demonstrates our commitment to sustainable development and positive community impact.",
+      "featured": [
+        {
+          "title": "Peacebuilding Initiative Rwanda",
+          "description": "Community-based reconciliation program reaching over 10,000 beneficiaries",
+          "sector": "Peacebuilding",
+          "year": "2023"
+        },
+        {
+          "title": "Health Economics Study Burundi",
+          "description": "Comprehensive analysis of healthcare accessibility and economic impact",
+          "sector": "Health Economics",
+          "year": "2023"
+        },
+        {
+          "title": "Renewable Energy Assessment",
+          "description": "Solar energy feasibility study for rural communities",
+          "sector": "Renewable Energy",
+          "year": "2022"
+        },
+        {
+          "title": "Justice Access Program",
+          "description": "Legal aid and awareness campaign improving access to justice",
+          "sector": "Access to Justice",
+          "year": "2022"
+        }
+      ]
+    },
+    "fr": {
+      "title": "Nos Projets",
+      "subtitle": "Découvrez les projets impactants que nous avons réalisés à travers l'Afrique de l'Est",
+      "content": "Notre portfolio présente des implémentations réussies dans divers secteurs incluant la consolidation de la paix, les communications, l'accès à la justice, les énergies renouvelables, l'économie de la santé et le commerce international. Chaque projet démontre notre engagement envers le développement durable et l'impact communautaire positif.",
+      "featured": [
+        {
+          "title": "Initiative de Consolidation de la Paix Rwanda",
+          "description": "Programme de réconciliation communautaire touchant plus de 10 000 bénéficiaires",
+          "sector": "Consolidation de la Paix",
+          "year": "2023"
+        },
+        {
+          "title": "Étude d'Économie de la Santé Burundi",
+          "description": "Analyse complète de l'accessibilité aux soins de santé et de l'impact économique",
+          "sector": "Économie de la Santé",
+          "year": "2023"
+        },
+        {
+          "title": "Évaluation des Énergies Renouvelables",
+          "description": "Étude de faisabilité de l'énergie solaire pour les communautés rurales",
+          "sector": "Énergies Renouvelables",
+          "year": "2022"
+        },
+        {
+          "title": "Programme d'Accès à la Justice",
+          "description": "Campagne d'aide juridique et de sensibilisation améliorant l'accès à la justice",
+          "sector": "Accès à la Justice",
+          "year": "2022"
+        }
+      ]
+    }
+  },
   "services": {
     "en": [
       {
@@ -105,7 +173,7 @@
       },
       {
         "title": "Communication Strategies & Knowledge Management",
-        "description": "We guide companies in their communication choices to satisfy all stakeholders. We cover visual and textual creation (graphics, motion design, video, photography). Our specialty: promoting your brand and supporting your awareness and advocacy campaigns."
+        "description": "We guide companies in their communication choices to satisfy all stakeholders. We cover visual and textual creation (graphics, motion design, video, photography). Our specialty: promoting your brand and supporting your awareness and advocacy campaigns."
       }
     ],
     "fr": [
@@ -127,7 +195,7 @@
       },
       {
         "title": "Stratégies de Communication et Gestion des Connaissances",
-        "description": "Nous guidons les entreprises dans leurs choix de communication pour satisfaire toutes les parties prenantes. Nous couvrons la création visuelle et textuelle (graphisme, motion design, vidéo, photo). Notre spécialité : promouvoir votre marque et soutenir vos campagnes de sensibilisation et plaidoyer."
+        "description": "Nous guidons les entreprises dans leurs choix de communication pour satisfaire toutes les parties prenantes. Nous couvrons la création visuelle et textuelle (graphisme, motion design, vidéo, photo). Notre spécialité : promouvoir votre marque et soutenir vos campagnes de sensibilisation et plaidoyer."
       }
     ]
   },

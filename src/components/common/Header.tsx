@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../../hooks/useLanguage';
 import content from '../../data/content.json';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isAchievementsOpen, setIsAchievementsOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
   const location = useLocation();
 
@@ -21,16 +22,25 @@ export const Header = () => {
 
   const navigation = content.navigation[language];
 
-  const navItems = [
+  const mainNavItems = [
     { key: 'home', href: '/' },
     { key: 'about', href: '/about' },
+  ];
+
+  const achievementsItems = [
     { key: 'mission', href: '/mission' },
     { key: 'expertise', href: '/expertise' },
     { key: 'services', href: '/services' },
+    { key: 'projects', href: '/projects' },
+  ];
+
+  const otherNavItems = [
     { key: 'team', href: '/team' },
     { key: 'partners', href: '/partners' },
     { key: 'contact', href: '/contact' },
   ];
+
+  const isAchievementActive = achievementsItems.some(item => location.pathname === item.href);
 
   return (
     <header
@@ -58,7 +68,58 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navItems.map((item) => (
+            {mainNavItems.map((item) => (
+              <Link
+                key={item.key}
+                to={item.href}
+                className={`font-body text-sm font-medium transition-colors duration-200 ${
+                  location.pathname === item.href
+                    ? 'text-primary-500'
+                    : 'text-gray-700 dark:text-gray-300 hover:text-primary-500'
+                }`}
+              >
+                {navigation[item.key as keyof typeof navigation]}
+              </Link>
+            ))}
+
+            {/* Our Achievements Dropdown */}
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsAchievementsOpen(true)}
+              onMouseLeave={() => setIsAchievementsOpen(false)}
+            >
+              <button
+                className={`font-body text-sm font-medium transition-colors duration-200 flex items-center space-x-1 ${
+                  isAchievementActive
+                    ? 'text-primary-500'
+                    : 'text-gray-700 dark:text-gray-300 hover:text-primary-500'
+                }`}
+              >
+                <span>{navigation.achievements}</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isAchievementsOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {/* Dropdown Menu */}
+              {isAchievementsOpen && (
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2">
+                  {achievementsItems.map((item) => (
+                    <Link
+                      key={item.key}
+                      to={item.href}
+                      className={`block px-4 py-2 text-sm font-medium transition-colors duration-200 ${
+                        location.pathname === item.href
+                          ? 'text-primary-500 bg-primary-50 dark:bg-primary-900/20'
+                          : 'text-gray-700 dark:text-gray-300 hover:text-primary-500 hover:bg-gray-50 dark:hover:bg-gray-700'
+                      }`}
+                    >
+                      {navigation[item.key as keyof typeof navigation]}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {otherNavItems.map((item) => (
               <Link
                 key={item.key}
                 to={item.href}
@@ -96,7 +157,43 @@ export const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden mt-4 py-4 border-t border-gray-200 dark:border-gray-700">
             <div className="flex flex-col space-y-3">
-              {navItems.map((item) => (
+              {mainNavItems.map((item) => (
+                <Link
+                  key={item.key}
+                  to={item.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`font-body text-sm font-medium transition-colors duration-200 ${
+                    location.pathname === item.href
+                      ? 'text-primary-500'
+                      : 'text-gray-700 dark:text-gray-300 hover:text-primary-500'
+                  }`}
+                >
+                  {navigation[item.key as keyof typeof navigation]}
+                </Link>
+              ))}
+
+              {/* Mobile Achievements Section */}
+              <div className="border-l-2 border-primary-500 pl-4 ml-2">
+                <p className="font-body text-xs font-semibold text-primary-500 mb-2 uppercase tracking-wide">
+                  {navigation.achievements}
+                </p>
+                {achievementsItems.map((item) => (
+                  <Link
+                    key={item.key}
+                    to={item.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`block font-body text-sm font-medium transition-colors duration-200 py-1 ${
+                      location.pathname === item.href
+                        ? 'text-primary-500'
+                        : 'text-gray-700 dark:text-gray-300 hover:text-primary-500'
+                    }`}
+                  >
+                    {navigation[item.key as keyof typeof navigation]}
+                  </Link>
+                ))}
+              </div>
+
+              {otherNavItems.map((item) => (
                 <Link
                   key={item.key}
                   to={item.href}
