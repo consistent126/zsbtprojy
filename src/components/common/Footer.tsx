@@ -23,19 +23,18 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">TO</span>
+   <div className="w-16 h-16 rounded-lg flex items-center justify-center">
+           <img src="/TIKKUN OLAM LOGO PNG 1.png" alt="Tikkun Olam Consulting Logo" className="h-full w-full object-contain" />
               </div>
               <div>
                 <h3 className="font-heading font-bold text-lg">Tikkun Olam</h3>
                 <p className="text-sm text-gray-400">Consulting Group</p>
               </div>
             </div>
-            <p className="text-gray-400 text-sm mb-4">
-              {language === 'en' 
-                ? 'Driving sustainable change in East Africa through innovative consulting solutions.'
-                : 'Conduire un changement durable en Afrique de l\'Est grâce à des solutions de conseil innovantes.'
-              }
+            <p className="text-gray-400 text-sm mb-4">           {language === 'en'
+              ? 'Driven by values, delivering sustainable impact in East Africa'
+            : 'Animé par des valeurs, apportant un impact durable en Afrique de l\'Est'
+            }
             </p>
           </div>
 
@@ -48,7 +47,8 @@ export const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-secondary-400 mt-0.5 flex-shrink-0" />
                 <p className="text-sm text-gray-400">
-                  687 Quartier Industrielle, Avenue Ruvyironza/Gikondo, Kicukiro, Kigali, Rwanda
+                  Burundi, Bujumbura, Quartier Industrielle, 687 Avenue Ruvyironza.
+Rwanda, Kigali, Kicukiro,Gikondo.
                 </p>
               </div>
               <div className="flex items-center space-x-3">

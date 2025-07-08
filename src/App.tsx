@@ -1,15 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { LanguageProvider } from './hooks/useLanguage';
-import { Layout } from './components/common/Layout';
-import { Home } from './pages/Home';
-import { About } from './pages/About';
-import { Mission } from './pages/Mission';
-import { AreasOfExpertise } from './pages/AreasOfExpertise';
-import { Services } from './pages/Services';
-import { Projects } from './pages/Projects';
-import { Team } from './pages/Team';
-import { Partners } from './pages/Partners';
-import { Contact } from './pages/Contact';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { LanguageProvider } from "./hooks/useLanguage";
+import { Layout } from "./components/common/Layout";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Mission } from "./pages/Mission";
+import { AreasOfExpertise } from "./pages/AreasOfExpertise";
+import { Services } from "./pages/Services";
+import { Projects } from "./pages/Projects";
+import { Team } from "./pages/Team";
+import { Partners } from "./pages/Partners";
+import { Contact } from "./pages/Contact";
 
 function App() {
   return (

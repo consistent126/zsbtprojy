@@ -52,11 +52,25 @@
   "about": {
     "en": {
       "title": "About Tikkun Olam Consulting Group",
-      "content": "Tikkun Olam Consulting Group is an East African consulting firm based in Rwanda and Burundi with expertise in peacebuilding, communications, access to justice and the rule of law, international trade, renewable energy and health economy. We are committed to driving sustainable change and positive impact across East Africa through innovative consulting solutions and strategic partnerships."
+      "content": "Tikkun Olam Consulting Group (TOCG) is a multi-disciplinary East African group of companies. TOCG is based in Rwanda and Burundi with expertise in Communication, Health economics, Access to justice-rule of law, Renewable energy, Peacebuilding and International Trade. Tikkun Olam Consulting Group collaborates with a variety of international organizations, development agencies and NGOs and aspires to evolve and adapt to the changing business landscape, fostering a culture of collaboration and excellence."
     },
     "fr": {
       "title": "À Propos de Tikkun Olam Consulting Group",
       "content": "Tikkun Olam Consulting Group est une société de conseil est-africaine basée au Rwanda et au Burundi avec une expertise en consolidation de la paix, communications, accès à la justice et état de droit, commerce international, énergies renouvelables et économie de la santé. Nous nous engageons à conduire un changement durable et un impact positif à travers l'Afrique de l'Est grâce à des solutions de conseil innovantes et des partenariats stratégiques."
+    },
+    "new_sections": {
+      "en": {
+        "vision_title": "Our Vision",
+        "vision_content": "Our vision is to be the leading global consulting group recognized for our unparalleled expertise, innovative solutions, and unwavering commitment to client success.",
+        "mission_title": "Our Mission and Approach",
+        "mission_content": "We aim to contribute to a positive impact in the development sector in Africa through innovative consulting services, strategic partnerships, and sustainable solutions that drive meaningful change. In our quest to understand the different social, economic and political dynamics entrenched to each project, Tikkun Olam Consulting Group values mutual learning from other stakeholders and collaborative approaches in executing its assignments."
+      },
+      "fr": {
+        "vision_title": "Notre Vision",
+        "vision_content": "Notre vision est d'être le groupe de conseil leader mondialement reconnu pour notre expertise inégalée, nos solutions innovantes et notre engagement inébranlable envers le succès de nos clients.",
+        "mission_title": "Notre Mission et Approche",
+        "mission_content": "Nous visons à contribuer à un impact positif dans le secteur du développement en Afrique grâce à des services de conseil innovants, des partenariats stratégiques et des solutions durables qui favorisent un changement significatif. Dans notre quête pour comprendre les différentes dynamiques sociales, économiques et politiques ancrées dans chaque projet, Tikkun Olam Consulting Group valorise l'apprentissage mutuel des autres parties prenantes et les approches collaboratives dans l'exécution de ses missions."
+      }
     }
   },
   "mission": {
@@ -71,20 +85,6 @@
           "Transparency and accountability in all operations",
           "Cultural sensitivity and local community engagement",
           "Excellence in service delivery and client satisfaction"
-        ]
-      }
-    },
-    "fr": {
-      "title": "Notre Mission",
-      "statement": "Contribuer à un impact positif dans le secteur du développement en Afrique grâce à des services de conseil innovants, des partenariats stratégiques et des solutions durables qui favorisent un changement significatif.",
-      "values": {
-        "title": "Nos Valeurs & Objectifs",
-        "items": [
-          "Apprentissage mutuel, adaptation et créativité/innovation",
-          "Développement durable et responsabilité environnementale",
-          "Transparence et responsabilité dans toutes les opérations",
-          "Sensibilité culturelle et engagement communautaire local",
-          "Excellence dans la prestation de services et satisfaction client"
         ]
       }
     }
@@ -124,7 +124,7 @@
     "fr": {
       "title": "Nos Projets",
       "subtitle": "Découvrez les projets impactants que nous avons réalisés à travers l'Afrique de l'Est",
-      "content": "Notre portfolio présente des implémentations réussies dans divers secteurs incluant la consolidation de la paix, les communications, l'accès à la justice, les énergies renouvelables, l'économie de la santé et le commerce international. Chaque projet démontre notre engagement envers le développement durable et l'impact communautaire positif.",
+      "content": "Notre portfolio présente des implémentations réussies dans divers secteurs incluant la consolidation de la paix, les communications, l'accès à la justice, les énergies renouvelables et l'économie de la santé. Chaque projet démontre notre engagement envers le développement durable et l'impact communautaire positif.",
       "featured": [
         {
           "title": "Initiative de Consolidation de la Paix Rwanda",
@@ -154,48 +154,65 @@
     }
   },
   "services": {
+    "hero": {
+      "image": "/heroservice.jpg",
+      "altText": {
+        "en": "Tikkun Olam Consulting Services",
+        "fr": "Services de conseil Tikkun Olam"
+      }
+    },
     "en": [
       {
         "title": "Technical Assistance",
-        "description": "We strengthen the capabilities of organizations and individuals. This includes resource mobilization, partnership development, tailored training, and strategic tool creation. Our goal is to improve your effectiveness and sustainability through planned change."
+        "description": "We strengthen the capabilities of organizations and individuals. This includes resource mobilization, partnership development, tailored training, and strategic tool creation. Our goal is to improve your effectiveness and sustainability through planned change.",
+        "image": "/technicalservice.jpg"
       },
       {
         "title": "Research and Studies",
-        "description": "We analyze the social, economic, political, and cultural contexts of development challenges. We measure program effectiveness using quantitative and qualitative data. Our studies inform your decisions and policy development."
+        "description": "We analyze the social, economic, political, and cultural contexts of development challenges. We measure program effectiveness using quantitative and qualitative data. Our studies inform your decisions and policy development.",
+        "image": "/research.jpg"
       },
       {
         "title": "Evaluation",
-        "description": "We systematically assess the design, implementation, and outcomes of your projects.Our objective is to determine their effectiveness and efficiency. We provide clear insights for improvement and decision making based on various methodologies."
+        "description": "We systematically assess the design, implementation, and outcomes of your projects.Our objective is to determine their effectiveness and efficiency. We provide clear insights for improvement and decision making based on various methodologies.",
+        "image": "/evaluation.jpg"
       },
       {
         "title": "Project/Program Development & Management",
-        "description": "We manage all your initiatives: planning, execution, and monitoring. For projects, we ensure objectives are met within deadlines and budgets. For programs, we optimize resources to maximize long term benefits."
+        "description": "We manage all your initiatives: planning, execution, and monitoring. For projects, we ensure objectives are met within deadlines and budgets. For programs, we optimize resources to maximize long term benefits.",
+        "image": "/project.jpg"
       },
       {
         "title": "Communication Strategies & Knowledge Management",
-        "description": "We guide companies in their communication choices to satisfy all stakeholders. We cover visual and textual creation (graphics, motion design, video, photography). Our specialty: promoting your brand and supporting your awareness and advocacy campaigns."
+        "description": "We guide companies in their communication choices to satisfy all stakeholders. We cover visual and textual creation (graphics, motion design, video, photography). Our specialty: promoting your brand and supporting your awareness and advocacy campaigns.",
+        "image": "/comstrat.jpg"
       }
     ],
     "fr": [
       {
         "title": "Assistance Technique",
-        "description": "Nous renforçons les capacités des organisations et des individus. Cela inclut la mobilisation de ressources, formations sur mesure et outils stratégiques. Notre but est d'améliorer votre efficacité et durabilité par un changement planifié."
+        "description": "Nous renforçons les capacités des organisations et des individus. Cela inclut la mobilisation de ressources, formations sur mesure et outils stratégiques. Notre but est d'améliorer votre efficacité et durabilité par un changement planifié.",
+        "image": "/technicalservice.jpg"
       },
       {
         "title": "Recherche et Études",
-        "description": "Nous analysons les contextes socio-économiques et culturels des enjeux de développement. Nous mesurons l'efficacité des programmes via des données quantitatives et qualitatives. Nos études éclairent vos décisions et l'élaboration des politiques."
+        "description": "Nous analysons les contextes socio-économiques et culturels des enjeux de développement. Nous mesurons l'efficacité des programmes via des données quantitatives et qualitatives. Nos études éclairent vos décisions et l'élaboration des politiques.",
+        "image": "/research.jpg"
       },
       {
-        "title": "Évaluation",
-        "description": "Nous évaluons systématiquement la conception, mise en œuvre et résultats de vos projets. Notre objectif est de déterminer leur efficacité et leur efficience. Nous fournissons des insights pour l'amélioration et la prise de décision, basés sur diverses méthodologies."
+        "title": "Evaluation",
+        "description": "Nous évaluons systématiquement la conception, la mise en œuvre et les résultats de vos projets. Notre objectif est de déterminer leur efficacité et leur efficience. Nous fournissons des informations claires pour l'amélioration et la prise de décision basées sur diverses méthodologies.",
+        "image": "/evaluation.jpg"
       },
       {
         "title": "Développement et Gestion de Projets/Programmes",
-        "description": "Nous gérons l'ensemble de vos initiatives : planification, exécution et suivi. Pour les projets, nous garantissons l'atteinte des objectifs dans les délais et budgets. Pour les programmes, nous optimisons les ressources pour maximiser les bénéfices à long terme."
+        "description": "Nous gérons l'ensemble de vos initiatives : planification, exécution et suivi. Pour les projets, nous garantissons l'atteinte des objectifs dans les délais et budgets. Pour les programmes, nous optimisons les ressources pour maximiser les bénéfices à long terme.",
+        "image": "/project.jpg"
       },
       {
         "title": "Stratégies de Communication et Gestion des Connaissances",
-        "description": "Nous guidons les entreprises dans leurs choix de communication pour satisfaire toutes les parties prenantes. Nous couvrons la création visuelle et textuelle (graphisme, motion design, vidéo, photo). Notre spécialité : promouvoir votre marque et soutenir vos campagnes de sensibilisation et plaidoyer."
+        "description": "Nous guidons les entreprises dans leurs choix de communication pour satisfaire toutes les parties prenantes. Nous couvrons la création visuelle et textuelle (graphisme, motion design, vidéo, photo). Notre spécialité : promouvoir votre marque et soutenir vos campagnes de sensibilisation et plaidoyer.",
+        "image": "/comstrat.jpg"
       }
     ]
   },
@@ -203,14 +220,15 @@
     {
       "name": "Kid Fleury Ineza",
       "position": {
-        "en": "Director of Operations",
-        "fr": "Directeur des Opérations"
+        "en": "Strategic and Operations Manager",
+        "fr": "Directeur Stratégique et des Opérations"
       },
       "bio": {
-        "en": "Experienced operations leader with extensive background in project management and organizational development.",
-        "fr": "Leader expérimenté des opérations avec une vaste expérience en gestion de projet et développement organisationnel."
+        "en": "Experienced strategic and operations leader with extensive background in project management and organizational development.",
+        "fr": "Leader stratégique et opérationnel expérimenté avec une vaste expérience en gestion de projet et développement organisationnel."
       },
-      "linkedin": ""
+      "linkedin": "https://www.linkedin.com/in/kid-fleury-ineza-b95603178/",
+      "image": "/Kid.jpg"
     },
     {
       "name": "Lyse Nathalie Menyimana",
@@ -220,21 +238,49 @@
       },
       "bio": {
         "en": "Strategic program director specializing in development initiatives and stakeholder engagement across East Africa.",
-        "fr": "Directrice stratégique de programmes spécialisée dans les initiatives de développement et l'engagement des parties prenantes en Afrique de l'Est."
+        "fr": "Directrice stratégique de programmes spécialisée dans les initiatives de development et l'engagement des parties prenantes en Afrique de l'Est."
       },
-      "linkedin": ""
+      "linkedin": "https://www.linkedin.com/in/lyse-nathalie-menyimana-84196b1b7/",
+      "image": "/Lyse.jpg"
     },
     {
       "name": "Milka Carelle Iyamuremye",
       "position": {
-        "en": "Admin Assistant",
-        "fr": "Assistante Administrative"
+        "en": "Administration Officer",
+        "fr": "Responsable Administrative"
       },
       "bio": {
         "en": "Dedicated administrative professional ensuring smooth operations and efficient project coordination.",
         "fr": "Professionnelle administrative dévouée assurant des opérations fluides et une coordination efficace des projets."
       },
-      "linkedin": ""
+      "linkedin": "https://www.linkedin.com/in/milka-carelle-iyamuremye-083b4b277/",
+      "image": "/Milka.jpg"
+    },
+    {
+      "name": "Henry Florian Ndihokubwayo",
+      "position": {
+        "en": "Communication Officer",
+        "fr": "Responsable de la Communication"
+      },
+      "bio": {
+        "en": "Strategic advisor with extensive experience in development programs and stakeholder engagement across East Africa.",
+        "fr": "Conseiller stratégique avec une vaste expérience dans les programmes de développement et l'engagement des parties prenantes en Afrique de l'Est."
+      },
+      "linkedin": "https://www.linkedin.com/in/henry-florian-ndihokubwayo-5421a1144/",
+      "image": "/Henry.jpg"
+    },
+    {
+      "name": "Dr Dorel Ndayisaba",
+      "position": {
+        "en": "Health Economics Specialist",
+        "fr": "Spécialiste en Économie de la Santé"
+      },
+      "bio": {
+        "en": "Expert in health economics, dedicated to improving healthcare systems and policies through data-driven insights.",
+        "fr": "Expert en économie de la santé, dédié à l'amélioration des systèmes et politiques de santé par des analyses basées sur les données."
+      },
+      "linkedin": "https://www.linkedin.com/in/dr-dorel-ndayisaba-97b7b1227/",
+      "image": "/Dorel.jpg"
     }
   ],
   "contact": {
@@ -250,7 +296,8 @@
         "subject": "Subject",
         "message": "Message",
         "submit": "Send Message"
-      }
+      },
+      "secondary_message": "Tikkun Olam Consulting Group works with a network of experts worldwide and is open to collaborate with experienced professionals."
     },
     "fr": {
       "title": "Contactez-Nous",
@@ -264,7 +311,117 @@
         "subject": "Sujet",
         "message": "Message",
         "submit": "Envoyer le Message"
-      }
+      },
+      "secondary_message": "Tikkun Olam Consulting Group travaille avec un réseau d'experts du monde entier et est ouvert à collaborer avec des professionnels expérimentés."
     }
+  },
+  "expertise": {
+    "hero": {
+      "en": {
+        "title": "Empowering your business future",
+        "mainText": "The services provided and our expertise cover evaluation of programs, technical assistance, research and studies, program management and elaboration of communication strategies on programs related to peacebuilding, human rights–including the right to health–, access to justice and rule of law, international trade, health economics and renewable energy.",
+        "buttonText": "Read More",
+        "bottomLineText": "We navigate your success journey with expertise and dedication.",
+        "heroImage": "/expertise-hero.jpg",
+        "profileImage1": "/profile-small-1.jpg",
+        "profileImage2": "/profile-small-2.jpg"
+      },
+      "fr": {
+        "title": "Dynamiser l'avenir de votre entreprise",
+        "mainText": "Les services fournis et notre expertise couvrent l'évaluation de programmes, l'assistance technique, la recherche et les études, la gestion de programmes et l'élaboration de stratégies de communication sur des programmes liés à la consolidation de la paix, aux droits de l'homme – y compris le droit à la santé –, à l'accès à la justice et à l'État de droit, au commerce international, à l'économie de la santé et aux énergies renouvelables.",
+        "buttonText": "En savoir plus",
+        "bottomLineText": "Nous traçons votre chemin vers le succès avec expertise et dévouement.",
+        "heroImage": "/expertise-hero.jpg",
+        "profileImage1": "/profile-small-1.jpg",
+        "profileImage2": "/profile-small-2.jpg"
+      }
+    },
+    "detailedAreas": [
+      {
+        "id": "peacebuilding",
+        "icon": "Users",
+        "title": {
+          "en": "Peacebuilding and transitional justice",
+          "fr": "Consolidation de la paix et justice transitionnelle"
+        },
+        "fullDescription": {
+          "en": "During the past decades, several regions of the world have experienced a significant increase in conflict events and human suffering. Ongoing conflicts on the African continent in general are often due to different reasons such as weak governance, ethnic tensions, resource competition, and external influence, amongst others. These armed conflicts obviously have an impact on the overall population such as loss of life, displacement, economic disruption, the erosion of social fabric, the weakening of state institutions, the weak application and respect of human rights during and after the said conflict. In this sense, Tikkun Olam Consulting Group is dedicated to support peacebuilding and transitional justice efforts on the continent through its services. Tikkun Olam Consulting Group supports its partners, be it NGOs or international organizations, in conducting evaluation of programs whose aim is to support communities with rebuilding the social fabric, strengthening institutions through the search for the truth, justice, reparations and measures of non-recurrence in post-conflict settings. Tikkun Olam Consulting Group similarly offers services in research on addressing the root causes of conflict and values the use of participatory approaches to ensure that special groups such as the youth, women, and indigenous communities are fully involved in the whole process. Our experts have been involved in managing projects on assisting communities in the process of peacebuilding and reconciliation through research, awareness raising activities, tailored capacity strengthening sessions –to actors such as victims of human rights violations, the media, local and national authorities – and awareness raising activities on the continent.",
+          "fr": "Au cours des dernières décennies, plusieurs régions du monde ont connu une augmentation significative des conflits et des souffrances humaines. Les conflits en cours sur le continent africain en général sont souvent dus à différentes raisons telles que la faible gouvernance, les tensions ethniques, la concurrence pour les ressources et l'influence extérieure, entre autres. Ces conflits armés ont évidemment un impact sur l'ensemble de la population, tels que les pertes de vies humaines, les déplacements, les perturbations économiques, l'érosion du tissu social, l'affaiblissement des institutions étatiques, la faible application et le respect des droits de l'homme pendant et après ledit conflit. En ce sens, Tikkun Olam Consulting Group s'engage à soutenir les efforts de consolidation de la paix et de justice transitionnelle sur le continent à travers ses services. Tikkun Olam Consulting Group soutient ses partenaires, qu'il s'agisse d'ONG ou d'organisations internationales, dans la conduite d'évaluations de programmes visant à soutenir les communautés dans la reconstruction du tissu social, le renforcement des institutions par la recherche de la vérité, la justice, les réparations et les mesures de non-récurrence dans les contextes post-conflit. Tikkun Olam Consulting Group propose également des services de recherche sur les causes profondes des conflits et valorise l'utilisation d'approches participatives pour garantir que des groupes spéciaux tels que les jeunes, les femmes et les communautés autochtones sont pleinement impliqués dans l'ensemble du processus. Nos experts ont été impliqués dans la gestion de projets visant à aider les communautés dans le processus de consolidation de la paix et de réconciliation par la recherche, des activités de sensibilisation, des sessions de renforcement des capacités adaptées – aux acteurs tels que les victimes de violations des droits de l'homme, les médias, les autorités locales et nationales – et des activités de sensibilisation sur le continent."
+        },
+        "color": "secondary",
+        "image": "/peacebuiding.jpg"
+      },
+      {
+        "id": "human-rights",
+        "icon": "Scale",
+        "title": {
+          "en": "Human rights",
+          "fr": "Droits humains"
+        },
+        "fullDescription": {
+          "en": "Given the recognition of applying a human rights-based approach to development, there have been numerous programs design and implementation. Tikkun Olam Consulting Group has been throughout the years, supporting various partners in elaborating communication plans and strategies, communication tools, awareness raising tools, capacity building sessions for health and media professions in the framework of access to health programs within campaigns on the fight against malaria, on cancer screening campaign. In 2021, our experts implemented and produced tools for an awareness raising campaign on Covid-19 targeting sex workers, drug users and the LBTIQ+ community for one of the leading organizations on the fight against HIV in Burundi. Our experts have experience in supporting the design and implementation of research and learning projects on issues of gender inclusion, youth participation and the rights of marginalized groups. Our experts have been involved in conducting research on the rule of law for the East African Community, including the data compilation and analysis to assess regional progress. They also have expertise in leading playful and participatory approaches to study child participation in Burundi and in driving evidence-based insights. Recently, in 2024 and 2025, Tikkun Olam Consulting Group has partnered with Singizi Consulting Group to conduct evaluation to assess changes made for programs that aim to advance gender justice in general and sexual and reproductive rights in particular. The conclusions for those evaluations resulted in practical recommendations that inform our client’s future strategic direction.",
+          "fr": "Compte tenu de la reconnaissance de l'application d'une approche basée sur les droits humains au développement, de nombreux programmes ont été conçus et mis en œuvre. Tikkun Olam Consulting Group a, au fil des ans, soutenu divers partenaires dans l'élaboration de plans et stratégies de communication, d'outils de communication, d'outils de sensibilisation, de sessions de renforcement des capacités pour les professionnels de la santé et des médias dans le cadre de programmes d'accès à la santé au sein de campagnes de lutte contre le paludisme, de campagnes de dépistage du cancer. En 2021, nos experts ont mis en œuvre et produit des outils pour une campagne de sensibilisation au Covid-19 ciblant les travailleurs du sexe, les consommateurs de drogues et la communauté LBTIQ+ pour l'une des principales organisations de lutte contre le VIH au Burundi. Nos experts ont de l'expérience dans le soutien à la conception et à la mise en œuvre de projets de recherche et d'apprentissage sur les questions d'inclusion de genre, de participation des jeunes et des droits des groupes marginalisés. Nos experts ont participé à la conduite de recherches sur l'état de droit pour la Communauté d'Afrique de l'Est, y compris la compilation et l'analyse de données pour évaluer les progrès régionaux. Ils ont également une expertise dans la conduite d'approches ludiques et participatives pour étudier la participation des enfants au Burundi et dans la production d'informations basées sur des preuves. Récemment, en 2024 et 2025, Tikkun Olam Consulting Group s'est associé à Singizi Consulting Group pour mener des évaluations afin d'évaluer les changements apportés aux programmes visant à faire avancer la justice de genre en général et les droits sexuels et reproductifs en particulier. Les conclusions de ces évaluations ont abouti à des recommandations pratiques qui informeront l'orientation stratégique future de nos clients."
+        },
+        "color": "primary",
+        "image": "/humanrights.jpg"
+      },
+      {
+        "id": "international-trade",
+        "icon": "TrendingUp",
+        "title": {
+          "en": "International trade",
+          "fr": "Commerce international"
+        },
+        "fullDescription": {
+          "en": "As a consulting firm focused in the East African region, Tikkun Olam Consulting Group supports regional integration. As such, we support development agencies,and private firms to unlock the full potential of international trade. From policy design to market access strategies, our team helps clients thrive in a globally connected economy Also, we provide services in trade policy advisory;i.e support institutions in developing trade strategies aligned with AfCFTA (African Continental Free Trade Area), WTO, EAC policies. Tikkun Olam Consulting Group.",
+          "fr": "En tant que cabinet de conseil axé sur la région de l'Afrique de l'Est, Tikkun Olam Consulting Group soutient l'intégration régionale. À ce titre, nous aidons les agences de développement et les entreprises privées à libérer le plein potentiel du commerce international. De la conception de politiques aux stratégies d'accès au marché, notre équipe aide les clients à prospérer dans une économie mondialisée. De plus, nous fournissons des services de conseil en politique commerciale ; c'est-à-dire que nous aidons les institutions à élaborer des stratégies commerciales alignées sur les politiques de la ZLECAf (Zone de libre-échange continentale africaine), de l'OMC et de la CAE."
+        },
+        "color": "secondary",
+        "image": "/internationaltrade.jpg"
+      },
+      {
+        "id": "health-economics",
+        "icon": "Heart",
+        "title": {
+          "en": "Health economics",
+          "fr": "Économie de la santé"
+        },
+        "fullDescription": {
+          "en": "In Africa, health economics and policy are crucial because they determine the allocation of resources to improve healthcare equity, efficiency, and accessibility for diverse populations. In the face of tight budgets, policymakers use economic analyses to rank cost-effective initiatives. Evidence-based policies are necessary to balance treatment and prevention measures in light of the growing burdens of maternal and child health adverse outcomes, infectious and non-communicable illnesses. Innovation in finance strategies, such as public-private partnerships, to sustainably grow healthcare services and infrastructure is also fuelled by health economics. In the end, these initiatives seek to improve health systems, lessen health inequities, and aid in the socioeconomic growth of Africa.",
+          "fr": "En Afrique, l'économie de la santé et les politiques sont cruciales car elles déterminent l'allocation des ressources pour améliorer l'équité, l'efficacité et l'accessibilité des soins de santé pour diverses populations. Face à des budgets serrés, les décideurs politiques utilisent des analyses économiques pour classer les initiatives rentables. Des politiques fondées sur des preuves sont nécessaires pour équilibrer les mesures de traitement et de prévention face aux fardeaux croissants des résultats indésirables en matière de santé maternelle et infantile, des maladies infectieuses et non transmissibles. L'innovation dans les stratégies de financement, telles que les partenariats public-privé, pour développer durablement les services et infrastructures de santé est également alimentée par l'économie de la santé. Au final, ces initiatives visent à améliorer les systèmes de santé, à réduire les inégalités en matière de santé et à contribuer au développement socio-économique de l'Afrique."
+        },
+        "color": "primary",
+        "image": "/healtheconomics.jpg"
+      },
+      {
+        "id": "renewable-energy",
+        "icon": "Zap",
+        "title": {
+          "en": "RENEWABLE ENERGY",
+          "fr": "ÉNERGIES RENOUVELABLES"
+        },
+        "fullDescription": {
+          "en": "Energy consumption contributes to 60% of global greenhouse gas emissions. Access to electricity has increased from 87% to 91% globally. Ensuring universal access to affordable electricity by 2030 requires investing in clean energy, expanding infrastructure, and upgrading technology in developing countries. This supports growth and environmental sustainability.In order to structure socially responsible investments, Tikkun Olam Consulting Group works with governments, development organizations, institutions, and energy financial partners. We specialize in performing baseline studies for renewable energy projects in order to accomplish this goal. This makes it possible to determine the project area's initial circumstances prior to execution. This entails gathering information on energy consumption, environmental aspects, and socioeconomic circumstances in order to provide a standard by which advancements and effects in the future can be evaluated. It's an essential stage in comprehending the situation, directing actions, and determining how successful renewable energy projects are.",
+          "fr": "La consommation d'énergie contribue à 60 % des émissions mondiales de gaz à effet de serre. L'accès à l'électricité est passé de 87 % à 91 % à l'échelle mondiale. Assurer un accès universel à une électricité abordable d'ici 2030 nécessite d'investir dans les énergies propres, d'étendre les infrastructures et de moderniser les technologies dans les pays en développement. Cela soutient la croissance et la durabilité environnementale. Afin de structurer des investissements socialement responsables, Tikkun Olam Consulting Group collabore avec les gouvernements, les organisations de développement, les institutions et les partenaires financiers du secteur de l'énergie. Nous sommes spécialisés dans la réalisation d'études de base pour les projets d'énergies renouvelables afin d'atteindre cet objectif. Cela permet de déterminer le project area's initial circumstances prior to execution. This entails gathering information on energy consumption, environmental aspects, and socioeconomic circumstances in order to provide a standard by which advancements and effects in the future can be evaluated. It's an essential stage in comprehending the situation, directing actions, and determining how successful renewable energy projects are.",
+          "fr": "La consommation d'énergie contribue à 60 % des émissions mondiales de gaz à effet de serre. L'accès à l'électricité est passé de 87 % à 91 % à l'échelle mondiale. Assurer un accès universel à une électricité abordable d'ici 2030 nécessite d'investir dans les énergies propres, d'étendre les infrastructures et de moderniser les technologies dans les pays en développement. Cela soutient la croissance et la durabilité environnementale. Afin de structurer des investissements socialement responsables, Tikkun Olam Consulting Group collabore avec les gouvernements, les organisations de développement, les institutions et les partenaires financiers du secteur de l'énergie. Nous sommes spécialisés dans la réalisation d'études de base pour les projets d'énergies renouvelables afin d'atteindre cet objectif. Cela permet de déterminer les circonstances initiales de la zone du projet avant son exécution. Cela implique de collecter des informations sur la consommation d'énergie, les aspects environnementaux et les circonstances socio-économiques afin de fournir une norme par laquelle les avancées et les effets futurs pourront être évalués. C'est une étape essentielle pour comprendre la situation, diriger les actions et déterminer le succès des projets d'énergies renouvelables."
+        },
+        "color": "secondary",
+        "image": "/renewableenergy.jpg"
+      },
+      {
+        "id": "communication",
+        "icon": "MessageSquare",
+        "title": {
+          "en": "Communication",
+          "fr": "Communication"
+        },
+        "fullDescription": {
+          "en": "Communication plays a crucial role in achieving organization, projects, programs objectives by raising public awareness, facilitating understanding of the issues and encouraging action. It makes it possible to disseminate information, promote changes in behavior, and mobilize stakeholders towards more sustainable practices. Communication is an essential leverage for making our objectives a reality and guaranteeing a prosperous and equitable future. We offer a new dynamic through the development of communication strategies and plans. Our aim is to convey a coherent message capable of impacting our target audiences. Technically, we offer our expertise in branding, digital and audiovisual communication to create and convey tools that are coherent with the message and that help to raise awareness, inform, encourage behavioral change, mobilize stakeholders, create and empower. Our service in knowledge management enables us to target real achievements, lessons learned and how to scale up our projects.",
+          "fr": "La communication joue un rôle crucial dans l'atteinte des objectifs des organisations, projets, programmes en sensibilisant le public, en facilitant la compréhension des enjeux et en encourageant l'action. Elle permet de diffuser l'information, de promouvoir les changements de comportement et de mobiliser les parties prenantes vers des pratiques plus durables. La communication est un levier essentiel pour concrétiser nos objectifs et garantir un avenir prospère et équitable. Nous offrons une nouvelle dynamique à travers le développement de communication des stratégies et des plans. Notre objectif est de transmettre un message cohérent capable d'impacter nos publics cibles. Techniquement, nous offrons notre expertise en branding, communication digitale et audiovisuelle pour créer et transmettre des outils qui sont cohérents avec le message et qui aident à sensibiliser, informer, encourager le changement de comportement, mobiliser les parties prenantes, créer et autonomiser. Notre service de gestion des connaissances nous permet de cibler des réalisations réelles, les leçons apprises et comment étendre nos projets."
+        },
+        "color": "primary",
+        "image": "/communication.jpg"
+      }
+    ]
   }
 }
