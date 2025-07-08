@@ -1,5 +1,9 @@
 {
   "navigation": {
+    "logo": {
+      "src": "/tologo.png",
+      "alt": "Tikkun Olam Consulting Group Logo"
+    },
     "en": {
       "home": "Home",
       "about": "About Us",

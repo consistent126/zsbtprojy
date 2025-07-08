@@ -4,6 +4,12 @@ import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../../hooks/useLanguage';
 import content from '../../data/content.json';
 
+// Helper function to get public URL for images
+const getPublicAssetUrl = (relativePath: string) => {
+  const baseUrl = import.meta.env.BASE_URL;
+  return `${baseUrl}${relativePath.startsWith('/') ? relativePath.substring(1) : relativePath}`;
+};
+
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,9 +59,13 @@ export const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">TO</span>
-            </div>
+            {/* THIS IS THE UPDATED SECTION FOR YOUR LOGO */}
+            <img
+              src={getPublicAssetUrl(content.navigation.logo.src)}
+              alt={content.navigation.logo.alt}
+              className="h-10 w-auto" // Adjust size as needed. 'h-10' sets height, 'w-auto' maintains aspect ratio.
+            />
+            {/* You can keep or remove the text below depending on whether your logo includes "Tikkun Olam Consulting Group" */}
             <div className="hidden sm:block">
               <h1 className="font-heading font-bold text-lg text-gray-900 dark:text-white">
                 Tikkun Olam
@@ -83,7 +93,7 @@ export const Header = () => {
             ))}
 
             {/* Our Achievements Dropdown */}
-            <div 
+            <div
               className="relative"
               onMouseEnter={() => setIsAchievementsOpen(true)}
               onMouseLeave={() => setIsAchievementsOpen(false)}
