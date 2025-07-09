@@ -34,7 +34,7 @@ export const Partners = () => {
     { name: 'GOPA', logoSrc: '/partners/partner17.jpg', logoAlt: 'GOPA Logo', color: 'secondary' },
     { name: 'UPV', logoSrc: '/partners/partner18.jpg', logoAlt: 'UPV Logo', color: 'primary' },
     { name: 'Next Einstein Forum', logoSrc: '/partners/partner19.jpg', logoAlt: 'Next Einstein Forum Logo', color: 'secondary' },
-    { name: 'UPV (P19)', logoSrc: '/partners/partner20.jpg', logoAlt: 'UPV Logo P19', color: 'primary' },
+    { name: 'Ministere de la Sante Publique', logoSrc: '/partners/partner20.jpg', logoAlt: 'Minisante Logo P19', color: 'primary' },
   ];
 
   return (
