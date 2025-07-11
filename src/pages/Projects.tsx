@@ -58,7 +58,7 @@ export const Projects = () => {
               {language === 'en' ? 'Featured Projects' : 'Projets Phares'}
             </h2>
             <p className="font-body text-lg text-white/80 max-w-2xl mx-auto">
-              {language === 'en' 
+              {language === 'en'
                 ? 'Highlighting some of our most impactful initiatives across East Africa.'
                 : 'Mise en avant de certaines de nos initiatives les plus impactantes à travers l\'Afrique de l\'Est.'
               }
@@ -71,8 +71,8 @@ export const Projects = () => {
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between mb-4">
                     <div className={`px-3 py-1 rounded-full text-xs font-medium ${
-                      getSectorColor(index) === 'secondary' 
-                        ? 'bg-secondary-100 text-secondary-700' 
+                      getSectorColor(index) === 'secondary'
+                        ? 'bg-secondary-100 text-secondary-700'
                         : 'bg-primary-100 text-primary-700'
                     }`}>
                       <Tag className="w-3 h-3 inline mr-1" />
@@ -83,13 +83,13 @@ export const Projects = () => {
                       {project.year}
                     </div>
                   </div>
-                  
+
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
                     getSectorColor(index) === 'secondary' ? 'text-secondary-500' : 'text-primary-500'
                   }`}>
                     {project.title}
                   </h3>
-                  
+
                   <p className="font-body text-text-primary leading-relaxed flex-grow">
                     {project.description}
                   </p>
@@ -106,7 +106,8 @@ export const Projects = () => {
       {/* Project Stats - White background */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+          {/* Changed grid-cols to 3 and added flexbox for centering */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center justify-items-center">
             {[
               {
                 number: '50+',
@@ -114,19 +115,14 @@ export const Projects = () => {
                 color: 'secondary'
               },
               {
-                number: '2',
-                label: language === 'en' ? 'Countries Served' : 'Pays Servis',
-                color: 'primary'
-              },
-              {
                 number: '10+',
                 label: language === 'en' ? 'Years Experience' : 'Années d\'Expérience',
-                color: 'secondary'
+                color: 'primary' // Changed color for better alternating
               },
               {
-                number: '100%',
-                label: language === 'en' ? 'Client Satisfaction' : 'Satisfaction Client',
-                color: 'primary'
+                number: '15+',
+                label: language === 'en' ? 'Partners' : 'Partenaires',
+                color: 'secondary' // Changed color for better alternating
               },
             ].map((stat, index) => (
               <div key={index} className="group">

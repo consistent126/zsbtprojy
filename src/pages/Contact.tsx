@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react'; // MessageCircle re-added
 import { useLanguage } from '../hooks/useLanguage';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { Card } from '../components/ui/Card';
@@ -20,10 +20,10 @@ export const Contact = () => {
     en: {
       title: "Get in Touch",
       subtitle: "Ready to drive positive change together? Contact us today.",
-      address: "687 Quartier Industrielle, Avenue Ruvyironza/Gikondo, Kicukiro, Kigali, Rwanda",
+      address: "Rwanda, Kigali, Kicukiro, Gikondo.\nBurundi, Bujumbura, Quartier Industriel, 687 Avenue Ruvyironza",
       email: "info.contact@tikkunolam-cg.com",
-      phone: "📞 +25761853434",
-      whatsapp: "📱 +23057865390",
+      phone: "+25761853434",
+      whatsapp: "+23057865390",
       form: {
         name: "Full Name",
         email: "Email Address",
@@ -35,10 +35,10 @@ export const Contact = () => {
     fr: {
       title: "Contactez-Nous",
       subtitle: "Prêt à conduire un changement positif ensemble? Contactez-nous aujourd'hui.",
-      address: "687 Quartier Industrielle, Avenue Ruvyironza/Gikondo, Kicukiro, Kigali, Rwanda",
+      address: "Rwanda, Kigali, Kicukiro, Gikondo.\nBurundi, Bujumbura, Quartier Industriel, 687 Avenue Ruvyironza",
       email: "info.contact@tikkunolam-cg.com",
-      phone: "📞 +25761853434",
-      whatsapp: "📱 +23057865390",
+      phone: "+25761853434",
+      whatsapp: "+23057865390",
       form: {
         name: "Nom Complet",
         email: "Adresse Email",
@@ -54,6 +54,7 @@ export const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    // In a real application, you would send this data to a backend server
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -92,7 +93,7 @@ export const Contact = () => {
               <h2 className="font-heading text-2xl font-bold text-text-primary mb-8">
                 {language === 'en' ? 'Contact Information' : 'Informations de Contact'}
               </h2>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -102,7 +103,8 @@ export const Contact = () => {
                     <h3 className="font-heading text-lg font-semibold text-text-primary mb-2">
                       {language === 'en' ? 'Office Address' : 'Adresse du Bureau'}
                     </h3>
-                    <p className="font-body text-text-primary/70">
+                    {/* Added whitespace-pre-line to ensure newlines are respected */}
+                    <p className="font-body text-text-primary/70 whitespace-pre-line">
                       {currentContent.address}
                     </p>
                   </div>
@@ -127,7 +129,7 @@ export const Contact = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-secondary-500" />
+                    <Phone className="w-6 h-6 text-secondary-500" /> {/* Correct Phone icon */}
                   </div>
                   <div>
                     <h3 className="font-heading text-lg font-semibold text-text-primary mb-2">
@@ -144,7 +146,7 @@ export const Contact = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MessageCircle className="w-6 h-6 text-primary-500" />
+                    <MessageCircle className="w-6 h-6 text-primary-500" /> {/* Changed back to MessageCircle */}
                   </div>
                   <div>
                     <h3 className="font-heading text-lg font-semibold text-text-primary mb-2">
@@ -162,14 +164,7 @@ export const Contact = () => {
                 </div>
               </div>
 
-              {/* Map placeholder */}
-              <div className="mt-8">
-                <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                  <p className="text-gray-500">
-                    {language === 'en' ? 'Interactive Map Coming Soon' : 'Carte Interactive Bientôt Disponible'}
-                  </p>
-                </div>
-              </div>
+              {/* Map placeholder was removed here */}
             </div>
 
             {/* Contact Form */}
@@ -177,7 +172,7 @@ export const Contact = () => {
               <h2 className="font-heading text-2xl font-bold text-text-primary mb-6">
                 {language === 'en' ? 'Send us a Message' : 'Envoyez-nous un Message'}
               </h2>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-2">

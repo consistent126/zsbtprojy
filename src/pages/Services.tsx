@@ -17,6 +17,7 @@ export const Services = () => {
   const { ref: servicesRef, isVisible: servicesVisible } = useScrollAnimation();
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation();
 
+  // This will now automatically get the services in the new order from content.json
   const servicesData = content.services[language];
   const servicesHeroImage = content.services.hero?.image;
   const servicesHeroAltText = content.services.hero?.altText[language];
@@ -24,18 +25,18 @@ export const Services = () => {
   return (
     <div className="py-20">
       {/* Hero Section - White theme (formerly blue) */}
-      <section className="py-16 bg-white relative overflow-hidden"> {/* Changed bg-secondary-500 to bg-white */}
+      <section className="py-16 bg-white relative overflow-hidden">
         <img
           src={getPublicAssetUrl(servicesHeroImage || '/heroservice.jpg')}
           alt={servicesHeroAltText || (language === 'en' ? 'Tikkun Olam Consulting Services' : 'Services de conseil Tikkun Olam')}
-          className="absolute inset-0 w-full h-full object-cover opacity-75" // Reduced opacity slightly for white background
+          className="absolute inset-0 w-full h-full object-cover opacity-75"
         />
         <div className="container mx-auto px-4 relative z-10">
           <div ref={titleRef} className="text-center mb-16">
-            <h1 className={`font-heading text-4xl md:text-5xl font-bold text-text-primary mb-6 transition-all duration-800 ${titleVisible ? 'animate-slide-right' : 'opacity-0'}`}> {/* Changed text-white to text-text-primary */}
+            <h1 className={`font-heading text-4xl md:text-5xl font-bold text-text-primary mb-6 transition-all duration-800 ${titleVisible ? 'animate-slide-right' : 'opacity-0'}`}>
               {language === 'en' ? 'Our Services' : 'Nos Services'}
             </h1>
-            <p className={`font-body text-lg text-text-primary/80 max-w-3xl mx-auto transition-all duration-800 delay-200 ${titleVisible ? 'animate-slide-left' : 'opacity-0'}`}> {/* Changed text-white/80 to text-text-primary/80 */}
+            <p className={`font-body text-lg text-text-primary/80 max-w-3xl mx-auto transition-all duration-800 delay-200 ${titleVisible ? 'animate-slide-left' : 'opacity-0'}`}>
               {language === 'en'
                 ? 'We offer comprehensive consulting services designed to drive sustainable change and positive impact across East Africa.'
                 : 'Nous offrons des services de conseil complets conçus pour conduire un changement durable et un impact positif à travers l\'Afrique de l\'Est.'
@@ -85,13 +86,13 @@ export const Services = () => {
       <div className="h-8 bg-white"></div>
 
       {/* Process Section - White theme (formerly green) */}
-      <section className="py-16 bg-white"> {/* Changed bg-primary-500 to bg-white */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4"> {/* Changed text-white to text-text-primary */}
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
               {language === 'en' ? 'Our Process' : 'Notre Processus'}
             </h2>
-            <p className="font-body text-lg text-text-primary/80 max-w-2xl mx-auto"> {/* Changed text-white/80 to text-text-primary/80 */}
+            <p className="font-body text-lg text-text-primary/80 max-w-2xl mx-auto">
               {language === 'en'
                 ? 'We follow a structured approach to ensure successful project delivery and sustainable outcomes.'
                 : 'Nous suivons une approche structurée pour assurer une livraison de projet réussie et des résultats durables.'
@@ -130,10 +131,10 @@ export const Services = () => {
                 <div className={`w-16 h-16 ${process.color === 'secondary' ? 'bg-secondary-500 text-white' : 'bg-white text-primary-500'} rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 hover:scale-110`}>
                   {<process.icon className="w-8 h-8" />}
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-text-primary mb-2"> {/* Changed text-white to text-text-primary */}
+                <h3 className="font-heading text-xl font-semibold text-text-primary mb-2">
                   {process.title}
                 </h3>
-                <p className="font-body text-text-primary/80 text-sm"> {/* Changed text-white/80 to text-text-primary/80 */}
+                <p className="font-body text-text-primary/80 text-sm">
                   {process.description}
                 </p>
               </div>

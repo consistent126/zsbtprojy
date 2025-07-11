@@ -1,4 +1,4 @@
-import { ArrowRight, Target, Users, Globe, TrendingUp, BarChart3 } from 'lucide-react';
+import { ArrowRight, Target, Users, Globe, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../hooks/useLanguage';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
@@ -6,16 +6,13 @@ import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
 import { HeroSlider } from '../components/ui/HeroSlider';
 import content from '../data/content.json';
-import { useState, useEffect } from 'react'; // <--- ADD THIS LINE to import useState and useEffect
+import { useState, useEffect } from 'react';
 
-// --- Import your images from the public folder ---
-// Assuming these are directly in your 'public' folder.
-// If you used import variables for heroImages previously, stick to that.
-// But based on your current code, you're using direct paths, so I'll adjust them to be correct for public folder.
-const heroImage1 = '/Main globe.jpg'; // Correct path for public folder
-const heroImage2 = '/Main globe dessin.jpg'; // Correct path for public folder
-const heroImage3 = '/Run the world.jpg'; // Correct path for public folder
-const ctaBackground = '/HeroWorks.jpg'; // Make sure this image is in your public folder too!
+
+const heroImage1 = '/Main globe.jpg';
+const heroImage2 = '/Main globe dessin.jpg';
+const heroImage3 = '/Run the world.jpg';
+const ctaBackground = '/HeroWorks.jpg';
 
 export const Home = () => {
   const { language } = useLanguage();
@@ -25,7 +22,7 @@ export const Home = () => {
 
   const homeContent = content.home[language];
 
-  // --- Quote State and Effect (grouped with other hooks) ---
+  // --- Quote State and Effect (for sliding quotes at the bottom) ---
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
 
   const quotes = [
@@ -46,42 +43,54 @@ export const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % quotes.length);
-    }, 3000); // 3 seconds latency
+    }, 3000); // 3 seconds latency for quotes
     return () => clearInterval(interval);
   }, [quotes.length]);
 
-  // --- Hero Images (using the imported variables/correct paths) ---
+
+  // --- State and Effect for the Successive Hero Message Display (now looping through 2 texts) ---
+  const [currentHeroTextIndex, setCurrentHeroTextIndex] = useState(0); // 0: subheadline, 1: delayedMessage
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      // Cycle through 0, 1, then back to 0
+      setCurrentHeroTextIndex(prevIndex => (prevIndex + 1) % 2); // Changed from % 3 to % 2
+    }, 5000); // 5 seconds interval for each text
+    return () => clearInterval(intervalId); // Cleanup the interval on component unmount
+  }, []);
+
+  // --- Hero Images ---
   const heroImages = [
-    heroImage1, // Use the variable from the top
-    heroImage2, // Use the variable from the top
-    heroImage3  // Use the variable from the top
+    heroImage1,
+    heroImage2,
+    heroImage3
   ];
 
   const features = [
     {
       icon: Target,
-      title: language === 'en' ? 'Strategic Solutions' : 'Solutions Stratégiques',
+      title: language === 'en' ? 'Strategic solutions' : 'Solutions stratégiques',
       description: language === 'en'
         ? 'Tailored consulting services that address your specific challenges and objectives'
         : 'Services de conseil sur mesure qui répondent à vos défis et objectifs spécifiques',
-      color: 'secondary' // Blue
+      color: 'secondary'
     },
     {
       icon: Globe,
-      title: language === 'en' ? 'Regional Expertise' : 'expertise Régionale',
+      title: language === 'en' ? 'Regional expertise' : 'Expertise régionale',
       description: language === 'en'
         ? 'Experienced professionals with deep knowledge of East Africa'
         : 'Professionnels expérimentés avec une connaissance approfondie de l\'Afrique de l\'Est',
-      color: 'primary' // green
+      color: 'primary'
     },
     {
       icon: TrendingUp,
-      title: language === 'en' ? 'Sustainable Impact' : 'Impact Durable',
+      title: language === 'en' ? 'Sustainable impact' : 'Impact durable',
       description: language === 'en'
         ? 'Solutions designed for long-term positive change and sustainable development'
         : 'Solutions conçues pour un changement positif à long terme et un développement durable',
-      color: 'secondary' // blue
-    },
+      color: 'secondary'
+    }
   ];
 
   return (
@@ -90,15 +99,42 @@ export const Home = () => {
       <HeroSlider images={heroImages}>
         <div ref={heroRef} className="container mx-auto px-4 text-center">
           <div className={`transition-all duration-1000 ${heroVisible ? 'opacity-100' : 'opacity-0'}`}>
-            <h1 className={`font-heading text-4xl md:text-6xl font-bold text-white mb-6 transition-all duration-800 ${heroVisible ? 'animate-slide-left' : ''}`}>
+            {/* Headline: Adjust font size and margin for responsiveness */}
+            <h1 className={`font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 md:mb-12 transition-all duration-800 ${heroVisible ? 'animate-slide-left' : ''}`}>
               {homeContent.headline}
             </h1>
-            <p className={`font-body text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto transition-all duration-800 delay-200 ${heroVisible ? 'animate-slide-right' : ''}`}>
-              {homeContent.subheadline}
-            </p>
+
+            {/* Container for the rotating messages: Adjust min-height and margin for responsiveness */}
+            <div className="relative min-h-[100px] sm:min-h-[120px] md:min-h-[160px] flex items-center justify-center mb-36 sm:mb-20 md:mb-24">
+              {/* First text: Original Subheadline */}
+              <p className={`
+                font-body text-base sm:text-lg md:text-xl text-white/90 max-w-3xl mx-auto text-center
+                absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                transition-all duration-700 ease-in-out transform
+                ${currentHeroTextIndex === 0 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}
+              `}>
+                {homeContent.subheadline}
+              </p>
+
+              {/* Second text: Tikkun Olam definition */}
+              <p className={`
+                font-body text-base sm:text-lg md:text-xl text-white/90 max-w-3xl mx-auto text-center
+                absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                transition-all duration-700 ease-in-out transform
+                ${currentHeroTextIndex === 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}
+              `}>
+                {homeContent.delayedMessage}
+              </p>
+            </div>
+
+            {/* Button container */}
             <div className={`transition-all duration-800 delay-400 ${heroVisible ? 'animate-fade-in' : ''}`}>
               <Link to="/services">
-                <Button size="lg" className="group bg-secondary-500 hover:bg-primary-500">
+                {/* Responsive Button sizing */}
+                <Button
+                  className="group bg-secondary-500 hover:bg-primary-500
+                             px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg md:px-10 md:py-5 md:text-xl"
+                >
                   {homeContent.cta}
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -120,8 +156,8 @@ export const Home = () => {
             </h2>
             <p className="font-body text-lg text-black/80 max-w-2xl mx-auto">
               {language === 'en'
-                ? 'We bring together local expertise and international standards to deliver exceptional results.'
-                : 'Nous combinons l\'expertise locale et les normes internationales pour offrir des résultats exceptionnels.'
+                ? 'We bring together expertise and international standards to deliver exceptional results.'
+                : 'Nous combinons l\'expertise et les normes internationales pour offrir des résultats exceptionnels.'
               }
             </p>
           </div>
@@ -155,7 +191,7 @@ export const Home = () => {
         <div className="absolute inset-0 bg-black bg-opacity-30 backdrop-filter backdrop-blur-sm"></div> {/* Overlay for blur and dim */}
         <div ref={ctaRef} className="container mx-auto px-4 text-center relative z-10">
           <div className={`transition-all duration-1000 ${ctaVisible ? 'animate-parallax' : 'opacity-0'}`}>
-            
+
             <div className="relative h-24 flex items-center justify-center overflow-hidden"> {/* Container for sliding quotes */}
               {quotes.map((quote, index) => (
                 <p
@@ -164,12 +200,9 @@ export const Home = () => {
                     ${index === currentQuoteIndex ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}`}
                   style={{ top: '50%', transform: 'translateY(-50%)' }}
                 >
-                  {quote[language]} {/* Corrected to use language property */}
+                  {quote[language]}
                 </p>
               ))}
-            </div>
-            <div className="mt-8"> {/* Added margin top to separate button from quotes */}
-            
             </div>
           </div>
         </div>

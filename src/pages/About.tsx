@@ -18,7 +18,7 @@ export const About = () => {
   const values = [
     {
       icon: BookOpen, // Changed icon for Mutual Learning
-      title: language === 'en' ? 'Mutual Learning' : 'Apprentissage Mutuel', // New title
+      title: language === 'en' ? 'Mutual learning' : 'Apprentissage mutuel', // New title
       description: language === 'en'
         ? 'Fostering an environment where continuous knowledge exchange and shared growth are paramount.'
         : 'Favoriser un environnement où l\'échange continu de connaissances et la croissance partagée sont primordiaux.',
@@ -121,7 +121,7 @@ export const About = () => {
         <div ref={valuesRef} className="container mx-auto px-4">
           <div className={`text-center mb-16 transition-all duration-800 ${valuesVisible ? 'animate-slide-down' : 'opacity-0'}`}>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-black mb-4">
-              {language === 'en' ? 'Our Core Values' : 'Nos Valeurs Fondamentales'}
+              {language === 'en' ? 'Our core values' : 'Nos valeurs fondamentales'}
             </h2>
             <p className="font-body text-lg text-black/80 max-w-2xl mx-auto">
               {language === 'en'

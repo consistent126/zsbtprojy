@@ -87,7 +87,7 @@ export const AreasOfExpertise = () => {
       <section className="py-16 bg-background dark:bg-dark-background">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-16 text-black dark:text-white">
-            {language === 'en' ? 'Our Areas of Expertise' : 'Nos Domaines d\'Expertise'}
+            {language === 'en' ? 'Our Areas of expertise' : 'Nos domaines d\'expertise'}
           </h2>
           {detailedExpertiseAreas.map((area, index) => {
             const IconComponent = IconMap[area.icon as keyof typeof IconMap];
@@ -142,7 +142,7 @@ export const AreasOfExpertise = () => {
       <section className="py-16 bg-primary-500 dark:bg-primary-700">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
-            {language === 'en' ? 'Need Specialized Expertise?' : 'Besoin d\'Expertise Spécialisée?'}
+            {language === 'en' ? 'Need specialized expertise?' : 'Besoin d\'expertise Spécialisée?'}
           </h2>
           <p className="font-body text-lg text-white/80 mb-8 max-w-2xl mx-auto">
             {language === 'en'

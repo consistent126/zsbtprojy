@@ -35,6 +35,9 @@ export const Partners = () => {
     { name: 'UPV', logoSrc: '/partners/partner18.jpg', logoAlt: 'UPV Logo', color: 'primary' },
     { name: 'Next Einstein Forum', logoSrc: '/partners/partner19.jpg', logoAlt: 'Next Einstein Forum Logo', color: 'secondary' },
     { name: 'Ministere de la Sante Publique', logoSrc: '/partners/partner20.jpg', logoAlt: 'Minisante Logo P19', color: 'primary' },
+    { name: 'Helco Group', logoSrc: '/partners/partner21.jpg', logoAlt: 'Helco Group Logo', color: 'secondary' },
+    { name: 'ADL', logoSrc: '/partners/partner22.jpg', logoAlt: 'ADL Logo', color: 'primary' },
+    { name: 'Singizi Consulting Africa', logoSrc: '/partners/partner23.jpg', logoAlt: 'Singizi Consulting Africa Logo', color: 'secondary' }
   ];
 
   return (
@@ -56,10 +59,11 @@ export const Partners = () => {
         </div>
       </section>
 
-      {/* White separator */}
+      {/* White separator (now between primary-500 and secondary-500) */}
       <div className="h-8 bg-white"></div>
 
-      <section className="py-16 bg-white">
+      {/* Changed background from bg-secondary-100 to bg-secondary-500 */}
+      <section className="py-16 bg-secondary-500">
         <div className="container mx-auto px-4">
           <div ref={partnersRef} className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             {partners.map((partner, index) => (
@@ -103,9 +107,10 @@ export const Partners = () => {
       {/* White separator */}
       <div className="h-8 bg-white"></div>
 
+      {/* Changed background from bg-secondary-100 to bg-secondary-500 */}
       <section className="py-16 bg-secondary-500">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8"> {/* Corrected line: was the source of the "Unterminated string constant" error */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🏛️</span>

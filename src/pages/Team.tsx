@@ -80,16 +80,16 @@ export const Team = () => {
                 </p>
 
                 {/* Individual LinkedIn button for each member */}
-                {/* Note: This button will now always render. If you want it to appear only when a LinkedIn URL is available,
-                        you can re-add the 'member.linkedin &&' condition around the <div>. */}
-                <div className="flex justify-center mt-4"> {/* Added margin-top for spacing */}
-                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                      <Button className="group bg-secondary-500 hover:bg-primary-600 text-white"> {/* Blue button, white text */}
-                        <Linkedin className="w-4 h-4 mr-2" />
-                        LinkedIn
-                      </Button>
-                    </a>
+                {member.linkedin && ( // Only render button if linkedin URL exists
+                  <div className="flex justify-center mt-4">
+                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                        <Button className="group bg-secondary-500 hover:bg-primary-600 text-white"> {/* Blue button, white text */}
+                          <Linkedin className="w-4 h-4 mr-2" />
+                          LinkedIn
+                        </Button>
+                      </a>
                   </div>
+                )}
               </Card>
             ))}
           </div>
@@ -99,33 +99,13 @@ export const Team = () => {
       {/* White separator */}
       <div className="h-8 bg-white"></div>
 
-      {/* Contact Our Team Section - Blue theme (only has email button) */}
+      {/* Contact Our Team Section - Blue theme (now simplified with new text) */}
       <section className="py-16 bg-secondary-500">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
-            {language === 'en' ? 'Contact Our Team' : 'Contactez Notre Équipe'}
-          </h2>
-          <p className="font-body text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-            {language === 'en'
-              ? 'Connect with our experts to discuss your project needs or partnership opportunities.'
-              : 'Connectez-vous avec nos experts pour discuter de vos besoins de projet ou d\'opportunités de partenariat.'
-            }
+          {/* Replaced all previous content with the single text */}
+          <p className="font-body text-xl md:text-2xl text-white font-semibold max-w-4xl mx-auto">
+            Tikkun Olam Consulting Group works with a network of experts worldwide and is open to collaborate with experienced professionals.
           </p>
-          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-md mx-auto flex flex-col items-center">
-            <h3 className="font-heading text-xl font-semibold text-text-primary mb-4">
-              {language === 'en' ? 'Get in Touch' : 'Entrer en Contact'}
-            </h3>
-            {/* Updated content here */}
-            <p className="font-body text-text-primary/70 mb-4">
-              {content.contact[language].secondary_message}
-            </p>
-            <a href="mailto:info.contact@tikkunolam-cg.com">
-              <Button className="group bg-secondary-500 hover:bg-primary-500">
-                <Mail className="w-4 h-4 mr-2" />
-                {language === 'en' ? 'Email Us' : 'Envoyez-nous un E-mail'}
-              </Button>
-            </a>
-          </div>
         </div>
       </section>
     </div>

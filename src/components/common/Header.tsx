@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../../hooks/useLanguage';
-import content from '../../data/content.json';
+import content from '../../data/content.json'; // Ensure this path is correct
 
 // Helper function to get public URL for images
 const getPublicAssetUrl = (relativePath: string) => {
@@ -27,26 +27,22 @@ export const Header = () => {
   }, []);
 
   const navigation = content.navigation[language];
+  // NEW: Get the dropdown items directly from the new `ourWorksDropdown` section
+  const ourWorksDropdownItems = content.ourWorksDropdown[language];
 
   const mainNavItems = [
     { key: 'home', href: '/' },
-    { key: 'about', href: '/about' },
-  ];
-
-  const achievementsItems = [
-    { key: 'mission', href: '/mission' },
-    { key: 'expertise', href: '/expertise' },
-    { key: 'services', href: '/services' },
-    { key: 'projects', href: '/projects' },
+    { key: 'about', 'href': '/about' },
+    // Removed services from here as requested
   ];
 
   const otherNavItems = [
     { key: 'team', href: '/team' },
-    { key: 'partners', href: '/partners' },
     { key: 'contact', href: '/contact' },
   ];
 
-  const isAchievementActive = achievementsItems.some(item => location.pathname === item.href);
+  // Dynamically check if any of the dropdown items are active
+  const isAchievementActive = ourWorksDropdownItems.some(item => location.pathname === item.href);
 
   return (
     <header
@@ -59,21 +55,11 @@ export const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            {/* THIS IS THE UPDATED SECTION FOR YOUR LOGO */}
             <img
               src={getPublicAssetUrl(content.navigation.logo.src)}
               alt={content.navigation.logo.alt}
-              className="h-10 w-auto" // Adjust size as needed. 'h-10' sets height, 'w-auto' maintains aspect ratio.
+              className="h-16 md:h-20 w-auto transition-all duration-300"
             />
-            {/* You can keep or remove the text below depending on whether your logo includes "Tikkun Olam Consulting Group" */}
-            <div className="hidden sm:block">
-              <h1 className="font-heading font-bold text-lg text-gray-900 dark:text-white">
-                Tikkun Olam
-              </h1>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                Consulting Group
-              </p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -112,9 +98,10 @@ export const Header = () => {
               {/* Dropdown Menu */}
               {isAchievementsOpen && (
                 <div className="absolute top-full left-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2">
-                  {achievementsItems.map((item) => (
+                  {/* Map over the new ourWorksDropdownItems from content.json */}
+                  {ourWorksDropdownItems.map((item) => (
                     <Link
-                      key={item.key}
+                      key={item.href}
                       to={item.href}
                       className={`block px-4 py-2 text-sm font-medium transition-colors duration-200 ${
                         location.pathname === item.href
@@ -122,7 +109,7 @@ export const Header = () => {
                           : 'text-gray-700 dark:text-gray-300 hover:text-primary-500 hover:bg-gray-50 dark:hover:bg-gray-700'
                       }`}
                     >
-                      {navigation[item.key as keyof typeof navigation]}
+                      {item.label}
                     </Link>
                   ))}
                 </div>
@@ -182,14 +169,14 @@ export const Header = () => {
                 </Link>
               ))}
 
-              {/* Mobile Achievements Section */}
+              {/* Mobile Achievements Section - Now dynamically renders from ourWorksDropdownItems */}
               <div className="border-l-2 border-primary-500 pl-4 ml-2">
                 <p className="font-body text-xs font-semibold text-primary-500 mb-2 uppercase tracking-wide">
                   {navigation.achievements}
                 </p>
-                {achievementsItems.map((item) => (
+                {ourWorksDropdownItems.map((item) => (
                   <Link
-                    key={item.key}
+                    key={item.href}
                     to={item.href}
                     onClick={() => setIsMenuOpen(false)}
                     className={`block font-body text-sm font-medium transition-colors duration-200 py-1 ${
@@ -198,7 +185,7 @@ export const Header = () => {
                         : 'text-gray-700 dark:text-gray-300 hover:text-primary-500'
                     }`}
                   >
-                    {navigation[item.key as keyof typeof navigation]}
+                    {item.label}
                   </Link>
                 ))}
               </div>
