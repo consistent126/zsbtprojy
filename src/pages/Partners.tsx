@@ -36,8 +36,8 @@ export const Partners = () => {
     { name: 'Next Einstein Forum', logoSrc: '/partners/partner19.jpg', logoAlt: 'Next Einstein Forum Logo', color: 'secondary' },
     { name: 'Ministere de la Sante Publique', logoSrc: '/partners/partner20.jpg', logoAlt: 'Minisante Logo P19', color: 'primary' },
     { name: 'Helco Group', logoSrc: '/partners/partner21.jpg', logoAlt: 'Helco Group Logo', color: 'secondary' },
-    { name: 'ADL', logoSrc: '/partners/partner22.jpg', logoAlt: 'ADL Logo', color: 'primary' },
-    { name: 'Singizi Consulting Africa', logoSrc: '/partners/partner23.jpg', logoAlt: 'Singizi Consulting Africa Logo', color: 'secondary' }
+    { name: 'ADL', logoSrc: '/partners/partner22.png', logoAlt: 'ADL Logo', color: 'primary' },
+    { name: 'Singizi Consulting Africa', logoSrc: '/partners/partner23.png', logoAlt: 'Singizi Consulting Africa Logo', color: 'secondary' }
   ];
 
   return (
