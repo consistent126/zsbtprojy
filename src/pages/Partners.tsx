@@ -34,15 +34,20 @@ export const Partners = () => {
     { name: 'GOPA', logoSrc: '/partners/partner17.jpg', logoAlt: 'GOPA Logo', color: 'secondary' },
     { name: 'UPV', logoSrc: '/partners/partner18.jpg', logoAlt: 'UPV Logo', color: 'primary' },
     { name: 'Next Einstein Forum', logoSrc: '/partners/partner19.jpg', logoAlt: 'Next Einstein Forum Logo', color: 'secondary' },
-    { name: 'Ministere de la Sante Publique', logoSrc: '/partners/partner20.jpg', logoAlt: 'Minisante Logo P19', color: 'primary' },
+    { name: 'Gouvernement du Burundi', logoSrc: '/partners/partner20.jpg', logoAlt: 'Minisante Logo P19', color: 'primary' },
     { name: 'Helco Group', logoSrc: '/partners/partner21.jpg', logoAlt: 'Helco Group Logo', color: 'secondary' },
     { name: 'ADL', logoSrc: '/partners/partner22.png', logoAlt: 'ADL Logo', color: 'primary' },
     { name: 'Singizi Consulting Africa', logoSrc: '/partners/partner23.png', logoAlt: 'Singizi Consulting Africa Logo', color: 'secondary' },
-    // --- New Partners Added Below ---
+    // --- Existing New Partners ---
     { name: 'FIDA', logoSrc: '/partners/partner24.png', logoAlt: 'FIDA logo', color: 'primary' },
     { name: 'GOPA', logoSrc: '/partners/partner25.png', logoAlt: 'GOPA logo', color: 'secondary' },
     { name: 'BS-Europe', logoSrc: '/partners/partner26.png', logoAlt: 'BS-Europe logo', color: 'primary' },
-    { name: 'PNUD', logoSrc: '/partners/partner27.png', logoAlt: 'pnud logo', color: 'secondary' }
+    { name: 'PNUD', logoSrc: '/partners/partner27.png', logoAlt: 'PNUD logo', color: 'secondary' },
+    // --- New Partners Added Below ---
+    { name: 'SIS (Sisters in success)', logoSrc: '/partners/partner28.jpg', logoAlt: 'SIS logo', color: 'primary' },
+    { name: 'iHela ryanje', logoSrc: '/partners/partner29.jpg', logoAlt: 'ihela logo', color: 'secondary' },
+    { name: 'The legal aid forum', logoSrc: '/partners/partner30.jpg', logoAlt: 'laf logo', color: 'primary' }, // Adjusted logoSrc
+    { name: 'Plan international Rwanda', logoSrc: '/partners/partner31.png', logoAlt: 'Pir logo', color: 'secondary' } // Adjusted logoSrc
   ];
 
   return (

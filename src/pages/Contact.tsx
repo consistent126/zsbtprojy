@@ -91,7 +91,7 @@ export const Contact = () => {
             {/* Contact Information */}
             <div>
               <h2 className="font-heading text-2xl font-bold text-text-primary mb-8">
-                {language === 'en' ? 'Contact Information' : 'Informations de Contact'}
+                {language === 'en' ? 'Contact information' : 'Informations de contact'}
               </h2>
 
               <div className="space-y-6">
@@ -101,7 +101,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-heading text-lg font-semibold text-text-primary mb-2">
-                      {language === 'en' ? 'Office Address' : 'Adresse du Bureau'}
+                      {language === 'en' ? 'Office address' : 'Adresse du bureau'}
                     </h3>
                     <p className="font-body text-text-primary/70 whitespace-pre-line">
                       {currentContent.address}
@@ -115,7 +115,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-heading text-lg font-semibold text-text-primary mb-2">
-                      {language === 'en' ? 'Email Address' : 'Adresse Email'}
+                      {language === 'en' ? 'Email address' : 'Adresse email'}
                     </h3>
                     <a
                       href={`mailto:${currentContent.email}`}
@@ -168,7 +168,7 @@ export const Contact = () => {
             {/* Contact Form */}
             <Card className="p-8">
               <h2 className="font-heading text-2xl font-bold text-text-primary mb-6">
-                {language === 'en' ? 'Send us a Message' : 'Envoyez-nous un Message'}
+                {language === 'en' ? 'Send us a message' : 'Envoyez-nous un message'}
               </h2>
 
               <form onSubmit={handleSubmit} className="space-y-6">

@@ -66,36 +66,53 @@ export const Projects = () => {
           </div>
 
           <div ref={projectsRef} className={`grid grid-cols-1 md:grid-cols-2 gap-8 transition-all duration-1000 ${projectsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            {projectsContent.featured.map((project, index) => (
-              <Card key={index} className="p-8 h-full bg-white">
-                <div className="flex flex-col h-full">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className={`px-3 py-1 rounded-full text-xs font-medium ${
-                      getSectorColor(index) === 'secondary'
-                        ? 'bg-secondary-100 text-secondary-700'
-                        : 'bg-primary-100 text-primary-700'
+            {projectsContent.featured.map((project, index) => {
+              // Directly use project.videoUrl if it exists
+              const youtubeUrl = project.videoUrl || null;
+
+              return (
+                <Card key={index} className="p-8 h-full bg-white">
+                  <div className="flex flex-col h-full">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className={`px-3 py-1 rounded-full text-xs font-medium ${
+                        getSectorColor(index) === 'secondary'
+                          ? 'bg-secondary-100 text-secondary-700'
+                          : 'bg-primary-100 text-primary-700'
+                      }`}>
+                        <Tag className="w-3 h-3 inline mr-1" />
+                        {project.sector}
+                      </div>
+                      <div className="flex items-center text-gray-500 text-sm">
+                        <Calendar className="w-4 h-4 mr-1" />
+                        {project.year}
+                      </div>
+                    </div>
+
+                    <h3 className={`font-heading text-xl font-bold mb-3 ${
+                      getSectorColor(index) === 'secondary' ? 'text-secondary-500' : 'text-primary-500'
                     }`}>
-                      <Tag className="w-3 h-3 inline mr-1" />
-                      {project.sector}
-                    </div>
-                    <div className="flex items-center text-gray-500 text-sm">
-                      <Calendar className="w-4 h-4 mr-1" />
-                      {project.year}
-                    </div>
+                      {project.title}
+                    </h3>
+
+                    <p className="font-body text-text-primary leading-relaxed flex-grow">
+                      {project.description}
+                    </p>
+
+                    {/* Conditionally render the YouTube button if videoUrl exists */}
+                    {youtubeUrl && (
+                      <div className="mt-6"> {/* Add some top margin */}
+                        <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
+                          <Button className="group bg-red-600 text-white hover:bg-red-700">
+                            {language === 'en' ? 'Watch on YouTube' : 'Voir sur YouTube'}
+                            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                          </Button>
+                        </a>
+                      </div>
+                    )}
                   </div>
-
-                  <h3 className={`font-heading text-xl font-bold mb-3 ${
-                    getSectorColor(index) === 'secondary' ? 'text-secondary-500' : 'text-primary-500'
-                  }`}>
-                    {project.title}
-                  </h3>
-
-                  <p className="font-body text-text-primary leading-relaxed flex-grow">
-                    {project.description}
-                  </p>
-                </div>
-              </Card>
-            ))}
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -106,7 +123,6 @@ export const Projects = () => {
       {/* Project Stats - White background */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          {/* Changed grid-cols to 3 and added flexbox for centering */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center justify-items-center">
             {[
               {
@@ -117,12 +133,12 @@ export const Projects = () => {
               {
                 number: '10+',
                 label: language === 'en' ? 'Years Experience' : 'Années d\'Expérience',
-                color: 'primary' // Changed color for better alternating
+                color: 'primary'
               },
               {
                 number: '15+',
                 label: language === 'en' ? 'Partners' : 'Partenaires',
-                color: 'secondary' // Changed color for better alternating
+                color: 'secondary'
               },
             ].map((stat, index) => (
               <div key={index} className="group">
@@ -154,7 +170,6 @@ export const Projects = () => {
             }
           </p>
           <Link to="/contact">
-            {/* Button changed to use secondary-500 background and white text */}
             <Button className="group bg-secondary-500 text-white hover:bg-secondary-600">
               {language === 'en' ? 'Contact Us Today' : 'Contactez-Nous Aujourd\'hui'}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

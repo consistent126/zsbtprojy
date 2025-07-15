@@ -89,71 +89,74 @@
       }
     }
   },
-  "projects": {
-    "en": {
-      "title": "Our projects",
-      "subtitle": "Discover the impactful projects we've delivered across East Africa",
-      "content": "Our portfolio showcases successful implementations across various sectors including peacebuilding, communications, access to justice, renewable energy, health economics, and international trade. Each project demonstrates our commitment to sustainable development and positive community impact.",
-      "featured": [
-        {
-          "title": "Production of communication tools",
-          "description": "In the framework of their renewable energy project, we partnered with GIGAWATT Global, an Israeli-American company to elaborate their communications productions and tools in Burundi. One of the videos produced is available.",
-          "videoUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
-          "sector": "Communication",
-          "year": "2022"
-        },
-        {
-          "title": "Production of audiovisual tools for capitalization purposes",
-          "description": "The Regional Secretariat on Sustainable Solutions for the Great Lakes Region (REDSS-GL) has commissioned us to produce audiovisual materials to capitalize on the actions carried out by six organizations that form the REDSS coalition. This work has served as an advocacy tool for access to means of subsistence for people affected by forced displacement, to facilitate their reintegration in the context of sustainable solutions. One of the materials produced is available ",
-          "sector": "Communication",
-          "year": "2023"
-        },
-        {
-          "title": "External evaluation of the Safe Abortion Action Fund (SAAF’s) grant making approach",
-          "description": "In partnership with Singizi Consulting Group, Tikkun Olam Consulting Group conducted an evaluation whose aims were to (i) determine SAAF’s role and contribution to the current funding environment of abortion programing and (ii) assess SAAF’s overall performance under its redesigned grant making approach.",
-          "sector": "Evaluation of programs",
-          "year": "2024"
-        },
-        {
-          "title": "End term evaluation of the power of pride program ",
-          "description": "In partnership with Singizi Consulting Group, Tikkun Olam Consulting Group conducted an end term evaluation of the Power of Pride Program for African Francophone partners located in eight countries; specifically in Burundi, Rwanda, the Democratic Republic of Congo, Burkina Faso, Bénin, Cameroun, Mali and Sengal.",
-          "sector": "Evaluation of Programs",
-          "year": "2025"
-        }
-      ]
-    },
-    "fr": {
-      "title": "Nos projets",
-      "subtitle": "Découvrez les projets impactants que nous avons réalisés à travers l'Afrique de l'Est",
-      "content": "Notre portfolio présente des implémentations réussies dans divers secteurs, incluant la consolidation de la paix, les communications, l'accès à la justice, les énergies renouvelables, l'économie de la santé et le commerce international. Chaque projet démontre notre engagement envers le développement durable et un impact communautaire positif.",
-      "featured": [
-        {
-          "title": "Production d'outils de communication",
-          "description": "Dans le cadre de leur projet d'énergie renouvelable, nous nous sommes associés à GIGAWATT Global, une entreprise israélo-américaine, pour élaborer leurs productions et outils de communication au Burundi. Une des vidéos produites est disponible.",
-          "videoUrl": "https://www.youtube.com/watch?v=o3bJOMcQte8",
-          "sector": "Communication",
-          "year": "2022"
-        },
-        {
-          "title": "Production d'outils audiovisuels à des fins de capitalisation",
-          "description": "Le Secrétariat Régional sur les Solutions Durables pour la Région des Grands Lacs (REDSS-GL) nous a mandatés pour produire des supports audiovisuels afin de capitaliser sur les actions menées par six organisations formant la coalition REDSS. Ce travail a servi d'outil de plaidoyer pour l'accès aux moyens de subsistance des personnes affectées par les déplacements forcés, afin de faciliter leur réintégration dans le contexte de solutions durables. Un des matériaux produits est disponible.",
-          "sector": "Communication",
-          "year": "2023"
-        },
-        {
-          "title": "Évaluation externe de l'approche d'octroi de subventions du Fonds d'action pour l'avortement sécurisé (SAAF)",
-          "description": "En partenariat avec Singizi Consulting Group, Tikkun Olam Consulting Group a mené une évaluation dont les objectifs étaient (i) de déterminer le rôle et la contribution de SAAF à l'environnement de financement actuel des programmes d'avortement et (ii) d'évaluer la performance globale de SAAF dans le cadre de son approche d'octroi de subventions repensée.",
-          "sector": "Évaluation de programmes",
-          "year": "2024"
-        },
-        {
-          "title": "Évaluation finale du programme Power of Pride",
-          "description": "En partenariat avec Singizi Consulting Group, Tikkun Olam Consulting Group a mené une évaluation finale du programme Power of Pride pour les partenaires francophones africains situés dans huit pays : spécifiquement au Burundi, au Rwanda, en République Démocratique du Congo, au Burkina Faso, au Bénin, au Cameroun, au Mali et au Sénégal.",
-          "sector": "Évaluation de programmes",
-          "year": "2025"
-        }
-      ]
-    }
+    "projects": {
+      "en": {
+        "title": "Our projects",
+        "subtitle": "Discover the impactful projects we've delivered across East Africa",
+        "content": "Our portfolio showcases successful implementations across various sectors including peacebuilding, communications, access to justice, renewable energy, health economics, and international trade. Each project demonstrates our commitment to sustainable development and positive community impact.",
+        "featured": [
+          {
+            "title": "Production of communication tools",
+            "description": "In the framework of their renewable energy project, we partnered with GIGAWATT Global, an Israeli-American company to elaborate their communications productions and tools in Burundi. One of the videos produced is available.",
+            "videoUrl": "https://youtu.be/o3bJOMcQte8",
+            "sector": "Communication",
+            "year": "2022"
+          },
+          {
+            "title": "Production of audiovisual tools for capitalization purposes",
+            "description": "The Regional Secretariat on Sustainable Solutions for the Great Lakes Region (REDSS-GL) has commissioned us to produce audiovisual materials to capitalize on the actions carried out by six organizations that form the REDSS coalition. This work has served as an advocacy tool for access to means of subsistence for people affected by forced displacement, to facilitate their reintegration in the context of sustainable solutions. One of the materials produced is available ",
+            "videoUrl": "https://youtu.be/rUptsvijZuo",
+            "sector": "Communication",
+            "year": "2023"
+          },
+          {
+            "title": "External evaluation of the Safe Abortion Action Fund (SAAF’s) grant making approach",
+            "description": "In partnership with Singizi Consulting Group, Tikkun Olam Consulting Group conducted an evaluation whose aims were to (i) determine SAAF’s role and contribution to the current funding environment of abortion programing and (ii) assess SAAF’s overall performance under its redesigned grant making approach.",
+            "sector": "Evaluation of programs",
+            "year": "2024"
+          },
+          {
+            "title": "End term evaluation of the power of pride program ",
+            "description": "In partnership with Singizi Consulting Group, Tikkun Olam Consulting Group conducted an end term evaluation of the Power of Pride Program for African Francophone partners located in eight countries; specifically in Burundi, Rwanda, the Democratic Republic of Congo, Burkina Faso, Bénin, Cameroun, Mali and Sengal.",
+            "sector": "Evaluation of Programs",
+            "year": "2025"
+          }
+        ]
+      },
+      "fr": {
+        "title": "Nos projets",
+        "subtitle": "Découvrez les projets impactants que nous avons réalisés à travers l'Afrique de l'Est",
+        "content": "Notre portfolio présente des implémentations réussies dans divers secteurs, incluant la consolidation de la paix, les communications, l'accès à la justice, les énergies renouvelables, l'économie de la santé et le commerce international. Chaque projet démontre notre engagement envers le développement durable et un impact communautaire positif.",
+        "featured": [
+          {
+            "title": "Production d'outils de communication",
+            "description": "Dans le cadre de leur projet d'énergie renouvelable, nous nous sommes associés à GIGAWATT Global, une entreprise israélo-américaine, pour élaborer leurs productions et outils de communication au Burundi. Une des vidéos produites est disponible.",
+            "videoUrl": "https://youtu.be/o3bJOMcQte8",
+            "sector": "Communication",
+            "year": "2022"
+          },
+          {
+            "title": "Production d'outils audiovisuels à des fins de capitalisation",
+            "description": "Le Secrétariat Régional sur les Solutions Durables pour la Région des Grands Lacs (REDSS-GL) nous a mandatés pour produire des supports audiovisuels afin de capitaliser sur les actions menées par six organisations formant la coalition REDSS. Ce travail a servi d'outil de plaidoyer pour l'accès aux moyens de subsistance des personnes affectées par les déplacements forcés, afin de faciliter leur réintégration dans le contexte de solutions durables. Un des matériaux produits est disponible.",
+            "videoUrl": "https://youtu.be/rUptsvijZuo",
+            "sector": "Communication",
+            "year": "2023"
+          },
+          {
+            "title": "Évaluation externe de l'approche d'octroi de subventions du Fonds d'action pour l'avortement sécurisé (SAAF)",
+            "description": "En partenariat avec Singizi Consulting Group, Tikkun Olam Consulting Group a mené une évaluation dont les objectifs étaient (i) de déterminer le rôle et la contribution de SAAF à l'environnement de financement actuel des programmes d'avortement et (ii) d'évaluer la performance globale de SAAF dans le cadre de son approche d'octroi de subventions repensée.",
+            "sector": "Évaluation de programmes",
+            "year": "2024"
+          },
+          {
+            "title": "Évaluation finale du programme Power of Pride",
+            "description": "En partenariat avec Singizi Consulting Group, Tikkun Olam Consulting Group a mené une évaluation finale du programme Power of Pride pour les partenaires francophones africains situés dans huit pays : spécifiquement au Burundi, au Rwanda, en République Démocratique du Congo, au Burkina Faso, au Bénin, au Cameroun, au Mali et au Sénégal.",
+            "sector": "Évaluation de programmes",
+            "year": "2025"
+          }
+        ]
+      }
+  
   },
   "services": {
     "hero": {
