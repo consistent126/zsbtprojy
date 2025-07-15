@@ -43,7 +43,7 @@ export const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % quotes.length);
-    }, 3000); // 3 seconds latency for quotes
+    }, 15000); // 3 seconds latency for quotes
     return () => clearInterval(interval);
   }, [quotes.length]);
 
@@ -55,7 +55,7 @@ export const Home = () => {
     const intervalId = setInterval(() => {
       // Cycle through 0, 1, then back to 0
       setCurrentHeroTextIndex(prevIndex => (prevIndex + 1) % 2); // Changed from % 3 to % 2
-    }, 5000); // 5 seconds interval for each text
+    }, 20000); // 5 seconds interval for each text
     return () => clearInterval(intervalId); // Cleanup the interval on component unmount
   }, []);
 
@@ -152,7 +152,7 @@ export const Home = () => {
         <div ref={featuresRef} className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-black mb-4">
-              {language === 'en' ? 'Why Choose Us' : 'Pourquoi Nous Choisir'}
+              {language === 'en' ? 'Why choose us' : 'Pourquoi nous choisir'}
             </h2>
             <p className="font-body text-lg text-black/80 max-w-2xl mx-auto">
               {language === 'en'

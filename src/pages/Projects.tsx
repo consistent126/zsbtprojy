@@ -154,7 +154,8 @@ export const Projects = () => {
             }
           </p>
           <Link to="/contact">
-            <Button className="group bg-white text-primary-500 hover:bg-gray-100">
+            {/* Button changed to use secondary-500 background and white text */}
+            <Button className="group bg-secondary-500 text-white hover:bg-secondary-600">
               {language === 'en' ? 'Contact Us Today' : 'Contactez-Nous Aujourd\'hui'}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>

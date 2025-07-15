@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react'; // MessageCircle re-added
+import { Mail, Phone, MapPin, Send } from 'lucide-react'; // MessageCircle removed from here
 import { useLanguage } from '../hooks/useLanguage';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { Card } from '../components/ui/Card';
@@ -18,33 +18,33 @@ export const Contact = () => {
 
   const contactContent = {
     en: {
-      title: "Get in Touch",
+      title: "Get in touch",
       subtitle: "Ready to drive positive change together? Contact us today.",
       address: "Rwanda, Kigali, Kicukiro, Gikondo.\nBurundi, Bujumbura, Quartier Industriel, 687 Avenue Ruvyironza",
       email: "info.contact@tikkunolam-cg.com",
       phone: "+25761853434",
       whatsapp: "+23057865390",
       form: {
-        name: "Full Name",
-        email: "Email Address",
+        name: "Full name",
+        email: "Email address",
         subject: "Subject",
         message: "Message",
-        submit: "Send Message"
+        submit: "Send message"
       }
     },
     fr: {
-      title: "Contactez-Nous",
+      title: "Contactez-nous",
       subtitle: "Prêt à conduire un changement positif ensemble? Contactez-nous aujourd'hui.",
       address: "Rwanda, Kigali, Kicukiro, Gikondo.\nBurundi, Bujumbura, Quartier Industriel, 687 Avenue Ruvyironza",
       email: "info.contact@tikkunolam-cg.com",
       phone: "+25761853434",
       whatsapp: "+23057865390",
       form: {
-        name: "Nom Complet",
-        email: "Adresse Email",
+        name: "Nom complet",
+        email: "Adresse email",
         subject: "Sujet",
         message: "Message",
-        submit: "Envoyer le Message"
+        submit: "Envoyer le message"
       }
     }
   };
@@ -103,7 +103,6 @@ export const Contact = () => {
                     <h3 className="font-heading text-lg font-semibold text-text-primary mb-2">
                       {language === 'en' ? 'Office Address' : 'Adresse du Bureau'}
                     </h3>
-                    {/* Added whitespace-pre-line to ensure newlines are respected */}
                     <p className="font-body text-text-primary/70 whitespace-pre-line">
                       {currentContent.address}
                     </p>
@@ -129,7 +128,7 @@ export const Contact = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-secondary-500" /> {/* Correct Phone icon */}
+                    <Phone className="w-6 h-6 text-secondary-500" />
                   </div>
                   <div>
                     <h3 className="font-heading text-lg font-semibold text-text-primary mb-2">
@@ -146,7 +145,8 @@ export const Contact = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MessageCircle className="w-6 h-6 text-primary-500" /> {/* Changed back to MessageCircle */}
+                    {/* Replaced MessageCircle with your custom WhatsApp SVG */}
+                    <img src="/whatsapp-icon.svg" alt="WhatsApp" className="w-6 h-6" />
                   </div>
                   <div>
                     <h3 className="font-heading text-lg font-semibold text-text-primary mb-2">
@@ -163,8 +163,6 @@ export const Contact = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Map placeholder was removed here */}
             </div>
 
             {/* Contact Form */}

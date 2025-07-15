@@ -6,14 +6,13 @@ import {
   TrendingUp,
   Zap,
   Heart,
-  BookOpen, // Kept for IconMap, even if not used in detailed areas
-  Target,   // Kept for IconMap, even if not used in detailed areas
-  Search,   // Kept for IconMap, even if not used in detailed areas
-  Briefcase // Kept for IconMap, even if not used in detailed areas
+  BookOpen,
+  Target,
+  Search,
+  Briefcase
 } from 'lucide-react';
 import { useLanguage } from '../hooks/useLanguage';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-// import { Card } from '../components/ui/Card'; // Card is no longer needed as the grid is removed
 import content from '../data/content.json';
 
 // Helper to map string icon names to Lucide components
@@ -32,56 +31,18 @@ const IconMap = {
 
 export const AreasOfExpertise = () => {
   const { language } = useLanguage();
-  const { ref: expertiseHeroRef, isVisible: expertiseHeroVisible } = useScrollAnimation();
+  // expertiseHeroRef and expertiseHeroVisible are removed as the hero section is gone
+  // expertiseHeroContent is removed as the hero section content is gone
 
   // Create individual refs for each detailed expertise area
   const detailedExpertiseRefs = content.expertise.detailedAreas.map(() => useScrollAnimation());
 
-  const expertiseHeroContent = content.expertise.hero[language];
   const detailedExpertiseAreas = content.expertise.detailedAreas;
 
   return (
     <div className="py-20">
-      {/* HERO SECTION: Areas of Expertise */}
-      <section ref={expertiseHeroRef} className="relative overflow-hidden py-24 md:py-32 bg-background dark:bg-dark-background">
-        {/* Top Left Diagonal Overlay (Slightly darker green) */}
-        <div className="absolute top-0 left-0 w-full h-full transform -skew-y-3 origin-top-left bg-primary-600 opacity-20 z-0"></div>
-        {/* Bottom Right Diagonal Overlay (Slightly darker green) */}
-        <div className="absolute bottom-0 right-0 w-full h-full transform skew-y-3 origin-bottom-right bg-primary-600 opacity-20 z-0"></div>
-
-        <div className="container mx-auto px-4 relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-12 md:gap-24">
-          {/* Left Column: Text Content */}
-          <div className={`p-8 md:p-12 rounded-lg shadow-lg bg-white dark:bg-black text-black dark:text-white transition-colors duration-300 transition-all duration-1000 ${expertiseHeroVisible ? 'animate-slide-left' : 'opacity-0'}`}>
-            <div className="text-center md:text-left">
-              <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-                {expertiseHeroContent.title}
-              </h1>
-              <p className="font-body text-lg leading-relaxed mb-8">
-                {expertiseHeroContent.mainText}
-              </p>
-              <div className="mt-12 flex items-center justify-center md:justify-start space-x-3">
-                <img src={expertiseHeroContent.profileImage1} alt="Profile 1" className="w-10 h-10 rounded-full border-2 border-primary-500 dark:border-white object-cover" />
-                <img src={expertiseHeroContent.profileImage2} alt="Profile 2" className="w-10 h-10 rounded-full border-2 border-primary-500 dark:border-white -ml-4 object-cover" />
-                <p className="font-body text-sm">
-                  {expertiseHeroContent.bottomLineText}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column: Image */}
-          <div className={`flex justify-center items-center p-8 md:p-12 rounded-lg shadow-lg bg-primary-500 transition-all duration-1000 delay-200 ${expertiseHeroVisible ? 'animate-slide-right' : 'opacity-0'}`}>
-            <img
-              src={expertiseHeroContent.heroImage}
-              alt="Areas of Expertise Hero"
-              className="w-full max-w-md h-auto rounded-lg shadow-xl object-cover"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* White separator */}
-      <div className="h-8 bg-white dark:bg-dark-background"></div>
+      {/* The entire HERO SECTION block has been removed */}
+      {/* The first White separator which followed the hero section has also been removed */}
 
       {/* NEW SECTION: Detailed Areas of Expertise with alternating layout (only these 6 areas) */}
       <section className="py-16 bg-background dark:bg-dark-background">
@@ -103,7 +64,7 @@ export const AreasOfExpertise = () => {
               >
                 {/* Image Column - Alternating colors as framing */}
                 <div
-                  className={`flex justify-center items-center p-8 md:p-12 rounded-lg shadow-lg 
+                  className={`flex justify-center items-center p-8 md:p-12 rounded-lg shadow-lg
                     ${(index % 2 === 0) ? 'md:order-1' : 'md:order-2'}
                     ${area.color === 'secondary' ? 'bg-secondary-500' : 'bg-primary-500'}`}
                 >

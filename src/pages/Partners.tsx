@@ -15,7 +15,7 @@ export const Partners = () => {
   // Partner data: 'color' property now only dictates the outline color for alternation
   // Corrected logoSrc to use lowercase 'partners' for broader compatibility
   const partners = [
-    { name: 'Centre Psychologique IZERE', logoSrc: '/partners/partner1.jpg', logoAlt: 'Centre Psychologique IZERE Logo', color: 'secondary' },
+    { name: 'Centre IZERE', logoSrc: '/partners/partner1.jpg', logoAlt: 'Centre Psychologique IZERE Logo', color: 'secondary' },
     { name: 'ANSS', logoSrc: '/partners/partner2.jpg', logoAlt: 'ANSS Logo', color: 'primary' },
     { name: 'Melbet', logoSrc: '/partners/partner3.jpg', logoAlt: 'Melbet Logo', color: 'secondary' },
     { name: 'Medica Mondiale', logoSrc: '/partners/partner4.jpg', logoAlt: 'Medica Mondiale Logo', color: 'primary' },
@@ -29,7 +29,7 @@ export const Partners = () => {
     { name: 'REDSS', logoSrc: '/partners/partner12.jpg', logoAlt: 'REDSS Logo', color: 'primary' },
     { name: 'SAYGE partners', logoSrc: '/partners/partner13.jpg', logoAlt: 'SAYGE partners Logo', color: 'secondary' },
     { name: 'Unicef', logoSrc: '/partners/partner14.jpg', logoAlt: 'Unicef Logo', color: 'primary' },
-    { name: 'UN information Center for Indian and Bhutan', logoSrc: '/partners/partner15.jpg', logoAlt: 'UN Information Center for Indian and Bhutan Logo', color: 'secondary' },
+    { name: 'UN information Center', logoSrc: '/partners/partner15.png', logoAlt: 'UN Information Center Logo', color: 'secondary' },
     { name: 'Once ancre Fund', logoSrc: '/partners/partner16.jpg', logoAlt: 'Once Ancre Fund Logo', color: 'primary' },
     { name: 'GOPA', logoSrc: '/partners/partner17.jpg', logoAlt: 'GOPA Logo', color: 'secondary' },
     { name: 'UPV', logoSrc: '/partners/partner18.jpg', logoAlt: 'UPV Logo', color: 'primary' },
@@ -37,7 +37,12 @@ export const Partners = () => {
     { name: 'Ministere de la Sante Publique', logoSrc: '/partners/partner20.jpg', logoAlt: 'Minisante Logo P19', color: 'primary' },
     { name: 'Helco Group', logoSrc: '/partners/partner21.jpg', logoAlt: 'Helco Group Logo', color: 'secondary' },
     { name: 'ADL', logoSrc: '/partners/partner22.png', logoAlt: 'ADL Logo', color: 'primary' },
-    { name: 'Singizi Consulting Africa', logoSrc: '/partners/partner23.png', logoAlt: 'Singizi Consulting Africa Logo', color: 'secondary' }
+    { name: 'Singizi Consulting Africa', logoSrc: '/partners/partner23.png', logoAlt: 'Singizi Consulting Africa Logo', color: 'secondary' },
+    // --- New Partners Added Below ---
+    { name: 'FIDA', logoSrc: '/partners/partner24.png', logoAlt: 'FIDA logo', color: 'primary' },
+    { name: 'GOPA', logoSrc: '/partners/partner25.png', logoAlt: 'GOPA logo', color: 'secondary' },
+    { name: 'BS-Europe', logoSrc: '/partners/partner26.png', logoAlt: 'BS-Europe logo', color: 'primary' },
+    { name: 'PNUD', logoSrc: '/partners/partner27.png', logoAlt: 'pnud logo', color: 'secondary' }
   ];
 
   return (

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, ChevronUp, Moon, Sun, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, ChevronUp, Moon, Sun } from 'lucide-react'; // MessageCircle removed from here
 import { useLanguage } from '../../hooks/useLanguage';
 
 export const Footer = () => {
@@ -42,7 +42,7 @@ export const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="font-heading font-semibold text-lg mb-4 text-secondary-400">
-              {language === 'en' ? 'Contact Information' : 'Informations de Contact'}
+              {language === 'en' ? 'Contact information' : 'Informations de contact'}
             </h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
@@ -70,7 +70,8 @@ export const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <MessageCircle className="w-5 h-5 text-secondary-400 flex-shrink-0" />
+                {/* Replaced MessageCircle with your custom WhatsApp SVG from the public folder */}
+                <img src="/whatsapp-icon.svg" alt="WhatsApp" className="w-5 h-5 flex-shrink-0" />
                 <a
                   href="https://wa.me/23057865390"
                   className="text-sm text-gray-400 hover:text-secondary-400 transition-colors"
@@ -86,20 +87,20 @@ export const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="font-heading font-semibold text-lg mb-4 text-secondary-400">
-              {language === 'en' ? 'Quick Links' : 'Liens Rapides'}
+              {language === 'en' ? 'Quick links' : 'Liens rapides'}
             </h4>
             <div className="grid grid-cols-2 gap-2">
               <Link to="/" className="text-sm text-gray-400 hover:text-secondary-400 transition-colors">
                 {language === 'en' ? 'Home' : 'Accueil'}
               </Link>
               <Link to="/about" className="text-sm text-gray-400 hover:text-secondary-400 transition-colors">
-                {language === 'en' ? 'About Us' : 'À Propos'}
+                {language === 'en' ? 'About us' : 'À propos'}
               </Link>
               <Link to="/services" className="text-sm text-gray-400 hover:text-secondary-400 transition-colors">
                 {language === 'en' ? 'Services' : 'Services'}
               </Link>
               <Link to="/areas-of-expertise" className="text-sm text-gray-400 hover:text-secondary-400 transition-colors">
-                {language === 'en' ? 'Areas of Expertise' : 'Domaines d\'Expertise'}
+                {language === 'en' ? 'Areas of expertise' : 'Domaines d\'expertise'}
               </Link>
               <Link to="/projects" className="text-sm text-gray-400 hover:text-secondary-400 transition-colors">
                 {language === 'en' ? 'Projects' : 'Projets'}
@@ -119,7 +120,7 @@ export const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm text-gray-400 mb-4 sm:mb-0">
-            © 2024 Tikkun Olam Consulting Group. {language === 'en' ? 'All rights reserved.' : 'Tous droits réservés.'}
+            © 2025 Tikkun Olam Consulting Group. {language === 'en' ? 'All rights reserved.' : 'Tous droits réservés.'}
           </p>
 
           <div className="flex items-center space-x-4">
