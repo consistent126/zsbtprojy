@@ -55,7 +55,7 @@ export const Projects = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
-              {language === 'en' ? 'Featured Projects' : 'Projets Phares'}
+              {language === 'en' ? 'Featured projects' : 'Projets phares'}
             </h2>
             <p className="font-body text-lg text-white/80 max-w-2xl mx-auto">
               {language === 'en'
@@ -103,7 +103,7 @@ export const Projects = () => {
                       <div className="mt-6"> {/* Add some top margin */}
                         <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
                           <Button className="group bg-red-600 text-white hover:bg-red-700">
-                            {language === 'en' ? 'Watch on YouTube' : 'Voir sur YouTube'}
+                            {language === 'en' ? 'Watch on youTube' : 'Voir sur youTube'}
                             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                           </Button>
                         </a>
@@ -127,12 +127,12 @@ export const Projects = () => {
             {[
               {
                 number: '50+',
-                label: language === 'en' ? 'Projects Completed' : 'Projets Réalisés',
+                label: language === 'en' ? 'Projects completed' : 'Projets réalisés',
                 color: 'secondary'
               },
               {
                 number: '10+',
-                label: language === 'en' ? 'Years Experience' : 'Années d\'Expérience',
+                label: language === 'en' ? 'Years of experience' : 'Années d\'expérience',
                 color: 'primary'
               },
               {
@@ -161,7 +161,7 @@ export const Projects = () => {
       <section className="py-16 bg-primary-500">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
-            {language === 'en' ? 'Start Your Project' : 'Commencez Votre Projet'}
+            {language === 'en' ? 'Start Your project' : 'Commencez Votre projet'}
           </h2>
           <p className="font-body text-lg text-white/80 mb-8 max-w-2xl mx-auto">
             {language === 'en'
@@ -171,7 +171,7 @@ export const Projects = () => {
           </p>
           <Link to="/contact">
             <Button className="group bg-secondary-500 text-white hover:bg-secondary-600">
-              {language === 'en' ? 'Contact Us Today' : 'Contactez-Nous Aujourd\'hui'}
+              {language === 'en' ? 'Contact us today' : 'Contactez-nous aujourd\'hui'}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>

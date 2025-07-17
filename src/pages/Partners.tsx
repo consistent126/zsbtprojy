@@ -46,8 +46,7 @@ export const Partners = () => {
     // --- New Partners Added Below ---
     { name: 'SIS (Sisters in success)', logoSrc: '/partners/partner28.jpg', logoAlt: 'SIS logo', color: 'primary' },
     { name: 'iHela ryanje', logoSrc: '/partners/partner29.jpg', logoAlt: 'ihela logo', color: 'secondary' },
-    { name: 'The legal aid forum', logoSrc: '/partners/partner30.jpg', logoAlt: 'laf logo', color: 'primary' }, // Adjusted logoSrc
-    { name: 'Plan international Rwanda', logoSrc: '/partners/partner31.png', logoAlt: 'Pir logo', color: 'secondary' } // Adjusted logoSrc
+   
   ];
 
   return (
@@ -126,7 +125,7 @@ export const Partners = () => {
                 <span className="text-2xl">🏛️</span>
               </div>
               <h3 className="font-heading text-xl font-semibold text-secondary-500 mb-4">
-                {language === 'en' ? 'Government Agencies' : 'Agences Gouvernementales'}
+                {language === 'en' ? 'Government agencies' : 'Agences gouvernementales'}
               </h3>
               <p className="font-body text-text-primary text-sm">
                 {language === 'en'
@@ -141,7 +140,7 @@ export const Partners = () => {
                 <span className="text-2xl">🌍</span>
               </div>
               <h3 className="font-heading text-xl font-semibold text-primary-500 mb-4">
-                {language === 'en' ? 'International Organizations' : 'Organisations Internationales'}
+                {language === 'en' ? 'International organizations' : 'Organisations internationales'}
               </h3>
               <p className="font-body text-text-primary text-sm">
                 {language === 'en'
@@ -156,7 +155,7 @@ export const Partners = () => {
                 <span className="text-2xl">🤝</span>
               </div>
               <h3 className="font-heading text-xl font-semibold text-secondary-500 mb-4">
-                {language === 'en' ? 'Private Sector' : 'Secteur Privé'}
+                {language === 'en' ? 'Private sector' : 'Secteur privé'}
               </h3>
               <p className="font-body text-text-primary text-sm">
                 {language === 'en'
@@ -176,7 +175,7 @@ export const Partners = () => {
       <section className="py-16 bg-primary-500">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
-            {language === 'en' ? 'Become a Partner' : 'Devenir Partenaire'}
+            {language === 'en' ? 'Become a partner' : 'Devenir partenaire'}
           </h2>
           <p className="font-body text-lg text-white/80 mb-8 max-w-2xl mx-auto">
             {language === 'en'

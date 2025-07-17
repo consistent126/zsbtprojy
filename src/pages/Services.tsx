@@ -34,7 +34,7 @@ export const Services = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div ref={titleRef} className="text-center mb-16">
             <h1 className={`font-heading text-4xl md:text-5xl font-bold text-text-primary mb-6 transition-all duration-800 ${titleVisible ? 'animate-slide-right' : 'opacity-0'}`}>
-              {language === 'en' ? 'Our Services' : 'Nos Services'}
+              {language === 'en' ? 'Our services' : 'Nos Services'}
             </h1>
             <p className={`font-body text-lg text-text-primary/80 max-w-3xl mx-auto transition-all duration-800 delay-200 ${titleVisible ? 'animate-slide-left' : 'opacity-0'}`}>
               {language === 'en'
@@ -90,7 +90,7 @@ export const Services = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
-              {language === 'en' ? 'Our Process' : 'Notre Processus'}
+              {language === 'en' ? 'Our process' : 'Notre processus'}
             </h2>
             <p className="font-body text-lg text-text-primary/80 max-w-2xl mx-auto">
               {language === 'en'
