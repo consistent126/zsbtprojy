@@ -31,7 +31,7 @@ export const Partners = () => {
     { name: 'Unicef', logoSrc: '/partners/partner14.jpg', logoAlt: 'Unicef Logo', color: 'primary' },
     { name: 'UN information Center', logoSrc: '/partners/partner15.png', logoAlt: 'UN Information Center Logo', color: 'secondary' },
     { name: 'Once ancre Fund', logoSrc: '/partners/partner16.jpg', logoAlt: 'Once Ancre Fund Logo', color: 'primary' },
-    { name: 'GOPA', logoSrc: '/partners/partner17.jpg', logoAlt: 'GOPA Logo', color: 'secondary' },
+   
     { name: 'UPV', logoSrc: '/partners/partner18.jpg', logoAlt: 'UPV Logo', color: 'primary' },
     { name: 'Next Einstein Forum', logoSrc: '/partners/partner19.jpg', logoAlt: 'Next Einstein Forum Logo', color: 'secondary' },
     { name: 'Gouvernement du Burundi', logoSrc: '/partners/partner20.jpg', logoAlt: 'Minisante Logo P19', color: 'primary' },
@@ -46,6 +46,7 @@ export const Partners = () => {
     // --- New Partners Added Below ---
     { name: 'SIS (Sisters in success)', logoSrc: '/partners/partner28.jpg', logoAlt: 'SIS logo', color: 'primary' },
     { name: 'iHela ryanje', logoSrc: '/partners/partner29.jpg', logoAlt: 'ihela logo', color: 'secondary' },
+     { name: 'Global Refugee Aid', logoSrc: '/partners/partner17.png', logoAlt: 'GRA logo', color: 'secondary' },
    
   ];
 
